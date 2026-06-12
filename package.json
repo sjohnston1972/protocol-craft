@@ -1,0 +1,14 @@
+{
+  "name": "protocol-craft",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Infinite Craft, but for networking protocols — Layer 1 through Layer 7.",
+  "scripts": {
+    "build": "node scripts/parse.js && node scripts/validate.js",
+    "parse": "node scripts/parse.js",
+    "validate": "node scripts/validate.js",
+    "dev": "wrangler dev",
+    "serve": "wrangler dev",
+    "deploy": "node scripts/deploy.js"
+  }
+}

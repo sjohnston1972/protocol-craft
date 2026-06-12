@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+<meta name="theme-color" content="#0a0d13" />
+<title>Protocol Craft</title>
+<meta name="description" content="Infinite Craft, but for networking protocols. Combine elements to discover Layer 1 through Layer 7." />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230a0d13'/%3E%3Cpath d='M8 20h6l2-8 2 8h6' fill='none' stroke='%235eead4' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Landing / entry screen -->
+  <div class="landing" id="landing">
+    <div class="landing-bg" aria-hidden="true">
+      <span style="--c:var(--t-L7)"></span><span style="--c:var(--t-L6)"></span>
+      <span style="--c:var(--t-L5)"></span><span style="--c:var(--t-L4)"></span>
+      <span style="--c:var(--t-L3)"></span><span style="--c:var(--t-L2_5)"></span>
+      <span style="--c:var(--t-L2)"></span><span style="--c:var(--t-concept)"></span>
+    </div>
+
+    <div class="landing-content" id="landingContent">
+      <h1 class="landing-title">Protocol&nbsp;Craft</h1>
+      <p class="landing-tag">Infinite Craft, for the network stack.</p>
+      <p class="landing-blurb">
+        Start with eight raw elements — copper, glass, a clock, a bare number —
+        and combine them two at a time to craft your way up the OSI model. From a
+        single electron to Ethernet, to IP and BGP, all the way to a padlock in the
+        address bar. Around <b>470 real protocols</b> are hidden in here, Layer&nbsp;1
+        to Layer&nbsp;7. There's no map and no score — just keep combining and see how
+        high up the stack you climb.
+      </p>
+      <button class="enter-btn" id="enterBtn" type="button">Enter the stack</button>
+      <p class="landing-foot">Layer&nbsp;1 &rarr; Layer&nbsp;7</p>
+    </div>
+
+    <!-- founder merge animation -->
+    <div class="founder-stage" id="founderStage" hidden>
+      <div class="founders">
+        <div class="founder f-left"><span class="f-kick">co-founder</span><span class="f-name">Sandy Lerner</span></div>
+        <div class="founder-plus">+</div>
+        <div class="founder f-right"><span class="f-kick">co-founder</span><span class="f-name">Leonard Bosack</span></div>
+      </div>
+      <div class="merge-flash"></div>
+      <div class="cisco-pop chip ms"><span class="name mono">Cisco</span></div>
+      <div class="founder-cap">San&nbsp;Francisco, 1984 — and the router had parents.</div>
+    </div>
+  </div>
+
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-name">Protocol Craft</span>
+    </div>
+    <div class="counter" id="counter" title="Discoveries">
+      <span class="counter-num" id="counterNum">0</span>
+      <span class="counter-label">discoveries</span>
+    </div>
+    <div class="actions">
+      <button class="btn" id="hintBtn" type="button">Hint</button>
+      <button class="btn" id="archiveBtn" type="button" aria-pressed="false">Archive</button>
+      <button class="btn" id="labBtn" type="button" aria-pressed="false">Lab&nbsp;Notes</button>
+      <button class="btn btn-ghost" id="resetBtn" type="button">Reset</button>
+    </div>
+  </header>
+
+  <main class="layout">
+    <aside class="shelf" id="shelf">
+      <div class="shelf-head">
+        <input class="search" id="search" type="search" placeholder="Search elements…" autocomplete="off" spellcheck="false" />
+      </div>
+      <div class="shelf-list" id="shelfList" role="list"></div>
+    </aside>
+
+    <section class="board" id="board">
+      <div class="board-hint" id="boardHint">
+        <p class="hint-title">Drag two elements together.</p>
+        <p class="hint-sub">Drag an element from the shelf onto the board (or just tap it). Drop one onto another to combine. Tap a board element to read its full story; drag it back onto the shelf to clear it. Start from the eight you have.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Lab Notes drawer -->
+  <div class="drawer-scrim" id="drawerScrim" hidden></div>
+  <aside class="labnotes" id="labnotes" hidden aria-label="Lab Notes">
+    <div class="labnotes-head">
+      <h2>Lab Notes</h2>
+      <button class="btn btn-ghost" id="labClose" type="button">Close</button>
+    </div>
+    <p class="labnotes-sub">Every protocol you've personally earned, with what it actually is.</p>
+    <div class="labnotes-body" id="labnotesBody"></div>
+  </aside>
+
+  <!-- Archive drawer (dead-end discoveries) -->
+  <aside class="labnotes" id="archive" hidden aria-label="Archive">
+    <div class="labnotes-head">
+      <h2>Archive</h2>
+      <button class="btn btn-ghost" id="archiveClose" type="button">Close</button>
+    </div>
+    <p class="labnotes-sub">Dead ends — discoveries that combine with nothing further. Filed here to keep the shelf clean.</p>
+    <div class="labnotes-body" id="archiveBody"></div>
+  </aside>
+
+  <!-- Toast / milestone stack -->
+  <div class="toast-stack" id="toastStack" aria-live="polite"></div>
+
+  <!-- Discovery card layer -->
+  <div class="discovery-layer" id="discoveryLayer"></div>
+
+  <!-- Reset confirm -->
+  <div class="modal-scrim" id="confirmScrim" hidden>
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="confirmTitle">
+      <h3 id="confirmTitle">Reset everything?</h3>
+      <p>This clears every discovery and the board, back to the original eight elements. It can't be undone.</p>
+      <div class="modal-actions">
+        <button class="btn btn-ghost" id="confirmCancel" type="button">Cancel</button>
+        <button class="btn btn-danger" id="confirmReset" type="button">Reset</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

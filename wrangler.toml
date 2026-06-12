@@ -1,0 +1,18 @@
+# Cloudflare Workers — static-assets deployment for Protocol Craft.
+# The whole game is static files in ./public; Workers serves them directly.
+#
+# Auth comes from the environment, NOT this file:
+#   CLOUDFLARE_API_TOKEN   and   CLOUDFLARE_ACCOUNT_ID   (both live in .env)
+# Deploy with:  npm run deploy   (see package.json — it loads .env first)
+
+name = "protocol-craft"
+compatibility_date = "2025-06-01"
+
+[assets]
+directory = "./public"
+
+# Serve the game at the custom domain. The zone clydeford.net must be in the
+# same Cloudflare account; custom_domain = true makes wrangler create it.
+[[routes]]
+pattern = "netcraft.clydeford.net"
+custom_domain = true

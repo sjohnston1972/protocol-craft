@@ -1,0 +1,2313 @@
+{
+ "100 Trying": [
+  "SIP/2.0 100 Trying — proxy got your INVITE, hang on",
+  "the provisional reply before the phone even rings"
+ ],
+ "180 Ringing": [
+  "SIP/2.0 180 Ringing — callee's phone is lit up",
+  "the ringback tone you hear before someone picks up"
+ ],
+ "200 OK": [
+  "SIP/2.0 200 OK — call answered, media can flow",
+  "HTTP/1.1 200 OK — the reply every web request hopes for"
+ ],
+ "4in6": [
+  "DS-Lite — IPv4 traffic tunnelled to a carrier's AFTR over IPv6",
+  "RFC 2473 IPv4-in-IPv6, for a v6-only core"
+ ],
+ "6in4": [
+  "Hurricane Electric's tunnelbroker.net — IPv6 over your IPv4 line",
+  "protocol 41 packets wrapping IPv6 inside IPv4"
+ ],
+ "6LoWPAN": [
+  "IPv6 squeezed over 802.15.4 in a Thread smart-home mesh",
+  "header compression so a sensor can speak IP on a tiny radio"
+ ],
+ "6PE/6VPE": [
+  "an ISP carrying customer IPv6 over its IPv4 MPLS backbone",
+  "6VPE — per-VRF IPv6 routes across a v4 core"
+ ],
+ "6rd": [
+  "Free.fr's famous 6rd rollout giving millions of users IPv6 overnight",
+  "a carrier's own prefix replacing 6to4's 2002::/16"
+ ],
+ "6to4": [
+  "2002::/16 — addresses derived straight from your IPv4 address",
+  "relay 192.88.99.1, the anycast 6to4 gateway (now deprecated)"
+ ],
+ "802.11": [
+  "the Wi-Fi in every coffee shop, on 2.4 and 5 GHz",
+  "Wi-Fi 6 (802.11ax) on your home router"
+ ],
+ "802.11k": [
+  "a phone reading the neighbor report to learn nearby APs",
+  "fewer probe scans because the AP already shared the list"
+ ],
+ "802.11r": [
+  "fast BSS transition keeping a VoWiFi call alive as you walk",
+  "roaming between APs in under 50 ms, no full reauth"
+ ],
+ "802.11s": [
+  "outdoor APs backhauling to each other with no cabling",
+  "a self-forming mesh of access points sharing one SSID"
+ ],
+ "802.11v": [
+  "BSS transition management steering you off a congested AP",
+  "the network saying 'go talk to AP 3, it's less busy'"
+ ],
+ "802.15.4": [
+  "the radio under Zigbee and Thread, in the 2.4 GHz band",
+  "low-power PHY/MAC for door sensors and smart bulbs"
+ ],
+ "802.1X": [
+  "corporate Wi-Fi that makes you log in with RADIUS",
+  "a switch port held in 'unauthorized' until EAP succeeds"
+ ],
+ "802.3x": [
+  "a PAUSE frame to 01:80:c2:00:00:01 — 'stop, I'm overrun'",
+  "flow control telling a fast sender to back off"
+ ],
+ "AAL5": [
+  "IP packets segmented into ATM cells over a DSL link",
+  "the 'simple and efficient' adaptation layer that carried data"
+ ],
+ "ACK": [
+  "the third packet of TCP's SYN, SYN-ACK, ACK handshake",
+  "TCP ack=1461 — 'got your bytes up to here'"
+ ],
+ "Ad-hoc Routing": [
+  "soldiers' radios forming a network with no base station",
+  "a fleet of drones routing for each other on the move"
+ ],
+ "Address": [
+  "an IP address — 192.0.2.7",
+  "an email address — sandy@cisco.com",
+  "a web address — https://example.com"
+ ],
+ "Address Exhaustion": [
+  "IANA handing out the last IPv4 /8 blocks on 3 Feb 2011",
+  "RIPE NCC running dry in November 2019"
+ ],
+ "AFP": [
+  "an old Mac mounting a share over 'afp://fileserver.local'",
+  "Apple Filing Protocol, retired in favor of SMB in macOS"
+ ],
+ "Aggressive Mode": [
+  "IKEv1 phase 1 in three messages, identity sent in the clear",
+  "the fast-but-leaky VPN handshake security folks warn against"
+ ],
+ "AH": [
+  "IP protocol 51 — signs the packet but breaks through NAT",
+  "IPsec authentication with no confidentiality"
+ ],
+ "Air": [
+  "the 2.4 GHz band shared by Wi-Fi, Bluetooth, and microwaves",
+  "the crowded spectrum your phone fights over at a stadium"
+ ],
+ "Amplification Attack": [
+  "the 2018 GitHub memcached flood peaking at 1.3 Tbps",
+  "a 60-byte DNS query forged to dump a 4000-byte reply on a victim"
+ ],
+ "AMQP": [
+  "RabbitMQ brokering orders between microservices on port 5672",
+  "exchanges and queues moving messages across the enterprise"
+ ],
+ "AMT": [
+  "watching a multicast IPTV stream across a unicast-only ISP",
+  "tunneling IGMP joins to a far-off multicast relay"
+ ],
+ "Anycast": [
+  "8.8.8.8 — Google DNS answered by the nearest data center",
+  "1.1.1.0/24 announced from hundreds of Cloudflare sites"
+ ],
+ "AODV": [
+  "a Zigbee mesh finding a route to the gateway on demand",
+  "no route kept until a packet actually needs one"
+ ],
+ "AppleTalk": [
+  "a LocalTalk daisy-chain of Macs and a LaserWriter in 1990",
+  "the Chooser picking a printer by name, no IP in sight"
+ ],
+ "ARCNET": [
+  "a 2.5 Mbps token-bus LAN wiring up a 1980s factory floor",
+  "Datapoint's coax network that lost to Ethernet"
+ ],
+ "ARP": [
+  "'who has 192.0.2.1? tell 192.0.2.5' on the local segment",
+  "'arp -a' listing the MAC behind each neighbor's IP"
+ ],
+ "ARP Spoofing": [
+  "a laptop on cafe Wi-Fi claiming to be the gateway's MAC",
+  "ettercap poisoning the ARP cache to read your traffic"
+ ],
+ "ASCII": [
+  "65 means 'A', 97 means 'a'",
+  "the seven-bit table behind plain .txt files"
+ ],
+ "ASN.1": [
+  "the schema language defining X.509 certificate fields",
+  "SNMP MIBs and LDAP messages described in ASN.1"
+ ],
+ "ATM": [
+  "53-byte cells carrying voice and data across a 1990s backbone",
+  "the fixed-cell tech that lost the LAN war to Ethernet"
+ ],
+ "AURP": [
+  "two AppleTalk offices linked over the IP internet",
+  "tunneling DDP between sites in the 1990s"
+ ],
+ "Authentication": [
+  "a TLS server proving it owns example.com with a certificate",
+  "SSH checking your key against authorized_keys"
+ ],
+ "Autonomous System": [
+  "AS13335 — Cloudflare",
+  "AS15169 — Google"
+ ],
+ "B.A.T.M.A.N.": [
+  "Freifunk community mesh routing with B.A.T.M.A.N. Advanced",
+  "each node only tracking its best next hop, not full paths"
+ ],
+ "B2BUA": [
+  "an SBC bridging two call legs, hiding the internals",
+  "a PBX that terminates one INVITE and starts a fresh one"
+ ],
+ "Babel": [
+  "a hop-by-hop protocol holding a flaky rooftop mesh together",
+  "RFC 8966 distance-vector, loop-avoiding on wireless"
+ ],
+ "Banyan VINES": [
+  "StreetTalk — VINES' directory that named users across an enterprise",
+  "a 1980s server OS the US military once ran widely"
+ ],
+ "BER/DER": [
+  "a DER-encoded X.509 cert — the bytes in a .cer file",
+  "tag-length-value triplets serializing ASN.1"
+ ],
+ "BFD": [
+  "300 ms hellos catching a dead BGP neighbor before the protocol notices",
+  "sub-second link failure detection between two routers"
+ ],
+ "BGP-4": [
+  "AS13335 announcing 1.1.1.0/24 to the world",
+  "a leaked route table peaking past 900,000 IPv4 prefixes"
+ ],
+ "BGP-LS": [
+  "feeding the IGP topology to a PCE controller via BGP",
+  "an SDN controller learning link metrics through BGP-LS"
+ ],
+ "Bidir-PIM": [
+  "many-to-many financial market data with shared trees both ways",
+  "no source-specific state, just bidirectional distribution"
+ ],
+ "Bitstream": [
+  "10101100 clocked off the wire one bit at a time",
+  "the raw run of ones and zeroes before bytes mean anything"
+ ],
+ "BitTorrent": [
+  "a Linux ISO pulled from a swarm of seeders and leechers",
+  "a .torrent file pointing at a tracker and piece hashes"
+ ],
+ "Bluetooth": [
+  "wireless earbuds pairing with your phone",
+  "a car stereo streaming audio over A2DP"
+ ],
+ "BOOTP": [
+  "a diskless workstation getting its IP from a MAC-keyed table",
+  "the UDP 67/68 ancestor DHCP grew out of"
+ ],
+ "BPDU Filter": [
+  "an access port set to just not send or process BPDUs",
+  "silencing STP toward a host instead of guarding it"
+ ],
+ "BPDU Guard": [
+  "a desk port err-disabled the instant someone plugs in a switch",
+  "shutting any PortFast port that dares emit a BPDU"
+ ],
+ "Bridge": [
+  "a two-port device learning which MAC lives on which side",
+  "a Linux 'br0' joining two segments into one"
+ ],
+ "Broadcast": [
+  "a frame to ff:ff:ff:ff:ff:ff hitting every host on the LAN",
+  "a DHCP Discover shouted to 255.255.255.255"
+ ],
+ "Broadcast Storm": [
+  "a cabling loop with no STP melting a switch in seconds",
+  "two patch ports plugged into each other by accident"
+ ],
+ "Brotli": [
+  "Content-Encoding: br on a web response",
+  "denser than gzip thanks to a shared static dictionary"
+ ],
+ "Bufferbloat": [
+  "ping jumps from 20 ms to 2000 ms the moment an upload starts",
+  "the video call that dies whenever someone backs up to the cloud",
+  "cured by fq_codel and SQM on an OpenWrt router"
+ ],
+ "Bundle": [
+  "four 1G ports lashed into one Port-channel with LACP",
+  "Linux bond0 in 802.3ad mode",
+  "Cisco EtherChannel — Po1 up, Gi0/1-4 bundled"
+ ],
+ "BYE": [
+  "SIP BYE sip:alice@example.com — the call is over",
+  "what your desk phone sends when you slam the handset down",
+  "the BYE that finally ends a two-hour conference call"
+ ],
+ "Cable": [
+  "the blue Cat5e patch lead everyone trips over",
+  "a 305 m box of Cat6 in the supply closet",
+  "eight wires, four twisted pairs, one RJ45 on each end"
+ ],
+ "Cache": [
+  "a resolver remembering example.com until the TTL runs out",
+  "your browser serving yesterday's logo from disk",
+  "a CDN edge holding a copy so the origin can rest"
+ ],
+ "CANCEL": [
+  "SIP CANCEL — the caller gave up before you answered",
+  "kills a ringing INVITE that never got its 200 OK",
+  "the missed call that stops mid-ring"
+ ],
+ "CAPWAP": [
+  "thin APs tunnelling Wi-Fi frames home to a Cisco WLC",
+  "UDP 5246 for control, 5247 for data",
+  "RFC 5415 — the tunnel every controller-based AP lives in"
+ ],
+ "CARP": [
+  "two OpenBSD firewalls sharing 192.0.2.1 on carp0",
+  "written because Cisco patented VRRP",
+  "the failover heartbeat in a pfSense HA pair"
+ ],
+ "Carrier": [
+  "AS3356 — Level 3's backbone, now Lumen",
+  "the MPLS circuit your company leases between offices",
+  "AT&T — the original one"
+ ],
+ "CBOR": [
+  "the encoding inside every WebAuthn attestation object",
+  "CoAP payloads from a battery-powered sensor",
+  "RFC 8949 — JSON's meaning at a fraction of the bytes"
+ ],
+ "CDP": [
+  "show cdp neighbors — revealing the switch at the far end",
+  "advertisements to 01:00:0c:cc:cc:cc every 60 seconds",
+  "how the IP phone learns its voice VLAN"
+ ],
+ "Cell": [
+  "an LTE eNodeB bolted to a church steeple",
+  "your phone handing off between towers at motorway speed",
+  "5G NR humming along at 3.5 GHz"
+ ],
+ "Certificate": [
+  "the padlock for example.com, signed by Let's Encrypt",
+  "openssl x509 -in cert.pem -text -noout",
+  "Microsoft Teams down for hours in Feb 2020 — one expired cert"
+ ],
+ "CFM": [
+  "continuity-check messages every 3.3 ms across a metro circuit",
+  "a MEP at each end of the carrier Ethernet handoff",
+  "layer-2 loopback — ping, but for a circuit with no IP"
+ ],
+ "CGNAT": [
+  "100.64.0.0/10 — the shared-space block from RFC 6598",
+  "a whole apartment building behind one public IPv4",
+  "port forwarding impossible; your game server unreachable"
+ ],
+ "CHAP": [
+  "the three-way challenge on a PPPoE DSL login",
+  "MD5 of challenge plus password — the secret never crosses the wire",
+  "MS-CHAPv2 still limping along in old VPNs"
+ ],
+ "CIDR": [
+  "192.0.2.0/24 where a Class C used to be",
+  "one /22 quietly covering four old /24s",
+  "RFC 1519 — the 1993 fix that saved the routing table"
+ ],
+ "Cisco": [
+  "founded 1984 by a couple working at Stanford",
+  "enable, conf t — the IOS incantation",
+  "the AGS router that carried the early Internet"
+ ],
+ "Cisco HDLC": [
+  "the default encapsulation on a Cisco serial interface",
+  "keepalives every 10 seconds across a T1",
+  "the extra protocol-type field standard HDLC never had"
+ ],
+ "Client": [
+  "your browser, asking for the page",
+  "ssh user@example.com — the side that dials",
+  "a mail app polling IMAP every five minutes"
+ ],
+ "Client-Server": [
+  "browser to web server — the classic arrangement",
+  "every phone app talking to someone else's cloud",
+  "X11, which famously named the two backwards"
+ ],
+ "CLNP": [
+  "NSAP addresses up to 20 bytes long",
+  "still routing parts of air-traffic-control networks",
+  "the packet format IS-IS was originally built to route"
+ ],
+ "Clock": [
+  "a quartz crystal ticking away inside every NIC",
+  "a stratum 1 NTP server fed by GPS",
+  "8 kHz — the heartbeat of digital telephony"
+ ],
+ "CoAP": [
+  "GET coap://[2001:db8::1]/sensors/temp",
+  "UDP port 5683",
+  "observing a lightbulb's state without polling it"
+ ],
+ "CoDel": [
+  "5 ms target delay, 100 ms interval — no knobs to mistune",
+  "fq_codel, the default qdisc on modern Linux",
+  "the algorithm that tamed bufferbloat in home routers"
+ ],
+ "Compression": [
+  "gzip shrinking an HTML page to a quarter its size",
+  "Content-Encoding: br",
+  "a 100 MB log file zipping down to 5"
+ ],
+ "Congestion": [
+  "the office Wi-Fi at 9 am",
+  "a cable segment at 8 pm when everyone streams",
+  "router queue full — tail drops everywhere"
+ ],
+ "Connection": [
+  "ESTABLISHED in the netstat output",
+  "192.0.2.7:51512 → 198.51.100.10:443",
+  "a three-way handshake that just completed"
+ ],
+ "Cookie": [
+  "Set-Cookie: session=abc123; HttpOnly; Secure",
+  "the consent banner asking you to accept it",
+  "still logged in next week — that's the cookie"
+ ],
+ "Copper": [
+  "Cat6 hiding in the office walls",
+  "the last mile of every DSL line",
+  "23 AWG solid core, punched down on a patch panel"
+ ],
+ "CoS": [
+  "voice tagged 5, bulk data left at 0",
+  "three bits in the 802.1Q tag — eight classes, take it or leave it",
+  "the PCP field deciding who waits at a congested trunk"
+ ],
+ "Daemon": [
+  "sshd, waiting patiently on port 22",
+  "httpd, crond, ntpd — the telltale trailing d",
+  "ps aux | grep d — half the column is them"
+ ],
+ "DCBX": [
+  "haggling PFC and ETS settings via LLDP TLVs",
+  "the negotiation that makes FCoE survivable",
+  "a storage switch port agreeing not to drop frames"
+ ],
+ "DCCP": [
+  "IP protocol number 33",
+  "RFC 4340 — datagrams with manners",
+  "streaming that prefers fresh loss to stale retransmits"
+ ],
+ "DCE-RPC": [
+  "port 135 — the Windows endpoint mapper",
+  "the plumbing under Exchange and half of Windows admin",
+  "MSRPC calls riding named pipes over SMB"
+ ],
+ "DDNS": [
+  "a home router updating its hostname after every new lease",
+  "nsupdate -k key.private",
+  "RFC 2136 — the record edits itself"
+ ],
+ "DECnet": [
+  "Phase IV addresses like 1.42 — area dot node",
+  "VAX/VMS machines chattering in a 1980s research lab",
+  "MAC addresses rewritten to AA-00-04 so neighbours could find you"
+ ],
+ "DEFLATE": [
+  "inside every .zip and every .png",
+  "gzip is just DEFLATE wearing a header",
+  "RFC 1951"
+ ],
+ "DHCP": [
+  "DISCOVER, OFFER, REQUEST, ACK — the DORA dance",
+  "your laptop handed 192.0.2.57 for 24 hours",
+  "UDP 67 server-side, 68 client-side"
+ ],
+ "DHCP Relay": [
+  "ip helper-address 198.51.100.10 on the VLAN interface",
+  "giaddr telling the server which subnet is asking",
+  "one central server leasing for every branch office"
+ ],
+ "DHCP Snooping": [
+  "uplink trusted, every access port not",
+  "dropping the OFFER from the rogue home router someone plugged in",
+  "the binding table dynamic ARP inspection leans on"
+ ],
+ "DHCPv6": [
+  "UDP 546 and 547 — new ports for the new protocol",
+  "SOLICIT where DHCPv4 said DISCOVER",
+  "prefix delegation handing your router a whole /56"
+ ],
+ "Diameter": [
+  "the AAA spine of every 4G LTE core",
+  "port 3868, over TCP or SCTP",
+  "the name is a pun — twice the RADIUS"
+ ],
+ "Diffie-Hellman": [
+  "the ECDHE in nearly every modern TLS handshake",
+  "g^a mod p meets g^b mod p — same secret, both ends",
+  "X25519 — the curve flavour everyone uses now"
+ ],
+ "DiffServ": [
+  "EF — DSCP 46 — stamped on every voice packet",
+  "AF41 for the video bridge",
+  "six bits living where the old ToS byte used to"
+ ],
+ "Discovery": [
+  "LLDP announcing 'I'm switch3, port 12'",
+  "your phone spotting the Chromecast via mDNS",
+  "ARP shouting 'who has 192.0.2.1?'"
+ ],
+ "Distance Vector": [
+  "RIP gossiping its full table every 30 seconds",
+  "hop count 16 — the polite word for unreachable",
+  "count-to-infinity after a link quietly dies"
+ ],
+ "DKIM": [
+  "DKIM-Signature: v=1; a=rsa-sha256; d=example.com; s=s1",
+  "the public key parked in s1._domainkey.example.com TXT",
+  "the header that proves the mail left example.com unaltered"
+ ],
+ "DMARC": [
+  "v=DMARC1; p=reject; rua=mailto:dmarc@example.com",
+  "a TXT record at _dmarc.example.com",
+  "aggregate reports piling up in a mailbox nobody reads"
+ ],
+ "DMVPN": [
+  "mGRE plus NHRP plus IPsec, all on Cisco routers",
+  "branch spokes building tunnels to each other on demand",
+  "one hub at HQ, two hundred shops as spokes"
+ ],
+ "DNS": [
+  "dig +short example.com",
+  "8.8.8.8 — Google's resolver; 1.1.1.1 — Cloudflare's",
+  "UDP 53, the question and the answer"
+ ],
+ "DNS Cache Poisoning": [
+  "the Kaminsky attack of 2008",
+  "a resolver convinced the bank lives at the attacker's IP",
+  "the reason resolvers randomize their source ports"
+ ],
+ "DNSSEC": [
+  "RRSIG and DNSKEY records riding along with the answer",
+  "the root zone, signed since July 2010",
+  "the AD flag in a dig response"
+ ],
+ "DOCSIS": [
+  "DOCSIS 3.1 pushing gigabit over 1980s coax",
+  "your cable modem ranging against the CMTS",
+  "the standard under nearly every cable broadband plan"
+ ],
+ "DoH": [
+  "https://cloudflare-dns.com/dns-query",
+  "Firefox resolving through Cloudflare by default in the US",
+  "port 443 — indistinguishable from ordinary browsing"
+ ],
+ "DoQ": [
+  "UDP 853, per RFC 9250",
+  "dns.adguard.com — among the first public resolvers to speak it",
+  "encrypted DNS without TCP's head-of-line blocking"
+ ],
+ "DoT": [
+  "port 853, reserved just for it",
+  "Android's Private DNS setting",
+  "dns.google answering over TLS"
+ ],
+ "DS-Lite": [
+  "IPv4 tunnelled inside IPv6 to the carrier's AFTR",
+  "RFC 6333",
+  "the B4 element quietly running in your home router"
+ ],
+ "DSDV": [
+  "sequence numbers stamped on every route to kill loops",
+  "the 1994 Perkins-Bhagwat paper everyone cites",
+  "the ancestor AODV grew out of"
+ ],
+ "DSL": [
+  "ADSL2+ topping out around 24 Mbit/s downstream",
+  "the DSLAM humming in the exchange down the road",
+  "broadband in the frequencies the phone call never used"
+ ],
+ "DSR": [
+  "RFC 4728 — the MANET experiment that stuffed the whole route in the header",
+  "a route record reading A → B → C, stamped into every packet",
+  "early-2000s ad-hoc laptop meshes in university testbeds"
+ ],
+ "DTLS": [
+  "RFC 6347 — TLS 1.2 reworked to survive lost and reordered datagrams",
+  "every WebRTC call — media keys agreed over DTLS-SRTP",
+  "Cisco AnyConnect tunnelling VPN traffic over DTLS to dodge TCP-over-TCP"
+ ],
+ "DTP": [
+  "switchport mode dynamic desirable — please, let's trunk",
+  "switchport nonegotiate — the command that shuts DTP up",
+  "VLAN hopping demos that start by sweet-talking DTP into trunking"
+ ],
+ "DVMRP": [
+  "RFC 1075 — flood first, prune later",
+  "mrouted daemons stitching together the 1990s MBone",
+  "IETF meetings multicast live over DVMRP tunnels in 1992"
+ ],
+ "Dynamic ARP Inspection": [
+  "ip arp inspection vlan 10 — one line, spoofers dropped",
+  "checking ARP replies against the DHCP snooping binding table",
+  "an ettercap MITM attempt dying quietly at the access port"
+ ],
+ "EAPoL": [
+  "EtherType 0x888E — the only frames an unauthenticated port will pass",
+  "an EAPOL-Start frame: a laptop knocking on an 802.1X door",
+  "the WPA2 4-way handshake — four EAPOL-Key frames attackers love to capture"
+ ],
+ "ECMP": [
+  "maximum-paths 4 — let OSPF use all the ties",
+  "5-tuple hashing spraying flows across a data-centre Clos fabric",
+  "BGP multipath splitting traffic over two equally good transits"
+ ],
+ "EGP": [
+  "RFC 904 (1984) — the protocol that glued the early NSFNET core together",
+  "IP protocol number 8, retired in favour of BGP by the mid-90s",
+  "a strict core-tree topology — fine until the internet stopped being a tree"
+ ],
+ "EIGRP": [
+  "router eigrp 100 — same AS number on both ends or no adjacency",
+  "DUAL picking a feasible successor so failover needs no recomputation",
+  "Cisco-only for 20 years, then opened up in RFC 7868 (2016)"
+ ],
+ "Electron": [
+  "−1.602 × 10⁻¹⁹ coulombs — the charge in question",
+  "drifting through copper slower than a snail while the signal nears light speed",
+  "a few volts' worth of them on a pin, read as a one"
+ ],
+ "Email": [
+  "sandy@example.com — mailbox, @, domain, since Ray Tomlinson picked @ in 1971",
+  "an RFC 5322 message: From:, To:, Subject:, blank line, regret",
+  "a Reply-All storm flattening the company mail server"
+ ],
+ "Encoding": [
+  "Manchester coding in 10 Mb Ethernet — a transition in every bit",
+  "4B/5B in 100BASE-TX, 64b/66b in 10 Gig",
+  "ASCII 'A' — 0x41 on the wire"
+ ],
+ "Encryption": [
+  "AES-256-GCM — the workhorse inside most TLS sessions",
+  "ROT13 — encryption's joke cousin",
+  "WhatsApp's end-to-end Signal protocol on a few billion phones"
+ ],
+ "ERPS": [
+  "ITU-T G.8032 — one blocked port keeps the ring loop-free",
+  "the RPL owner unblocking within 50 ms when a metro ring link dies",
+  "carrier Ethernet rings circling a city's street cabinets"
+ ],
+ "ES-IS": [
+  "ISO 9542 — ESH and ISH hellos so hosts and routers find each other",
+  "the OSI stack's answer to ARP plus router discovery",
+  "still flying in aviation's ATN ground-air networks"
+ ],
+ "ESMTP": [
+  "EHLO instead of HELO — the secret knock from RFC 1869",
+  "250-STARTTLS in the capability list — encryption on offer",
+  "250-SIZE 35882577 — Gmail telling you how big an attachment can be"
+ ],
+ "ESP": [
+  "IP protocol 50 — the IPsec packets your firewall must permit",
+  "RFC 4303 tunnel mode hiding the original IP header entirely",
+  "AES-GCM ESP carrying a site-to-site VPN between two offices"
+ ],
+ "EtherChannel": [
+  "channel-group 1 mode active — LACP doing the bundling",
+  "PAgP desirable — the Cisco-proprietary way to ask",
+  "8 × 1 Gig uplinks pretending to be one fat port-channel"
+ ],
+ "Ethernet": [
+  "Bob Metcalfe's 1973 Xerox PARC sketch that conquered the world",
+  "dst MAC, src MAC, EtherType 0x0800, payload, FCS — 1500 bytes of MTU",
+  "a Cat5e cable with an RJ45 click on each end"
+ ],
+ "ETS": [
+  "802.1Qaz — guarantee storage traffic 50% of the link, burst when idle",
+  "FCoE and LAN classes sharing a 10 Gig converged port",
+  "priority-group bandwidth carving on a data-centre Nexus"
+ ],
+ "EVPN": [
+  "RFC 7432 — MAC addresses riding in BGP type-2 routes",
+  "VXLAN-EVPN fabrics replacing spanning tree in modern data centres",
+  "stretching VLAN 10 between two sites without stretching the failure domain"
+ ],
+ "FabricPath": [
+  "Cisco Nexus 7000s running IS-IS for Layer 2, pre-TRILL standard",
+  "feature-set fabricpath — the licence line that started it",
+  "conversational MAC learning, later swept aside by VXLAN-EVPN"
+ ],
+ "FDDI": [
+  "100 Mb/s over dual counter-rotating fibre rings",
+  "the token-passing campus backbone of a 1992 university",
+  "ring wrap — both rings splicing themselves around a cut"
+ ],
+ "Fibre": [
+  "single-mode at 1310 or 1550 nm — the long-haul wavelengths",
+  "yellow jacket OS2 to the next city, aqua OM3 across the data hall",
+  "transatlantic cables landing a continent's traffic on a beach"
+ ],
+ "FIN": [
+  "F flag in tcpdump — one side is done sending",
+  "FIN, ACK, FIN, ACK — both directions closed separately",
+  "TIME_WAIT lingering for two segment lifetimes, just in case"
+ ],
+ "Finger": [
+  "finger sandy@example.com — RFC 742, asking who's around since 1977",
+  "fingerd's buffer overflow — one of the Morris worm's 1988 ways in",
+  "finger coke@cs.cmu.edu — checking the CMU coke machine remotely"
+ ],
+ "Flex Links": [
+  "switchport backup interface Gi0/2 — one up, one waiting",
+  "access-switch uplink failover without running spanning tree",
+  "standby link cutting in when the primary uplink goes dark"
+ ],
+ "FlexVPN": [
+  "crypto ikev2 profile — the config stanza everything hangs off",
+  "one IKEv2 framework replacing DMVPN, EZVPN, and crypto-map sprawl",
+  "hub-and-spoke with per-peer policy pushed at IKEv2 auth time"
+ ],
+ "FlowSpec": [
+  "RFC 8955 — match dst 198.51.100.7 udp/123, action discard",
+  "blackholing an NTP reflection flood at every edge router at once",
+  "a BGP NLRI that carries firewall rules instead of prefixes"
+ ],
+ "Frame": [
+  "an Ethernet frame — two MACs, an EtherType, payload, 4-byte FCS",
+  "64 bytes minimum, padded if your data is shy",
+  "the preamble's 10101010... drumroll before every one"
+ ],
+ "Frame Relay": [
+  "DLCI 100 — the circuit number on your 1990s bank-branch WAN",
+  "a CIR of 64 kbps, with bursts marked discard-eligible",
+  "swept away by MPLS, kept alive in CCNA labs for years after"
+ ],
+ "Frequency Hopping": [
+  "Bluetooth hopping 1600 times a second across 79 channels",
+  "Hedy Lamarr's 1942 spread-spectrum patent for torpedo guidance",
+  "the original 802.11 FHSS option at 2.4 GHz, pre-Wi-Fi-as-we-know-it"
+ ],
+ "FTP": [
+  "port 21 for commands, a second connection for the data",
+  "user 'anonymous', password your email address — the old courtesy",
+  "PASV mode, invented to make firewalls slightly less miserable"
+ ],
+ "FTPS": [
+  "AUTH TLS on port 21 — explicit mode, per RFC 4217",
+  "implicit TLS on port 990 — encrypted from the first byte",
+  "still the upload method banks demand long after SFTP won everywhere else"
+ ],
+ "GENEVE": [
+  "UDP port 6081 — RFC 8926's extensible overlay",
+  "VMware NSX-T swapping VXLAN for GENEVE as its default encap",
+  "TLV options in the header so the metadata can grow later"
+ ],
+ "GETVPN": [
+  "a key server handing one group key to every branch router (RFC 6407 GDOI)",
+  "encrypting over private MPLS while keeping the original IP header",
+  "any-to-any branch encryption with zero point-to-point tunnels"
+ ],
+ "GIF": [
+  "CompuServe, 1987 — 256 colours and LZW compression",
+  "the Unisys LZW patent fight that spawned PNG out of spite",
+  "an animated reaction looping forever in the group chat"
+ ],
+ "Glass": [
+  "Corning's 1970 low-loss fibre — under 20 dB/km, then ever lower",
+  "fused silica today losing just ~0.2 dB per kilometre at 1550 nm",
+  "a hair-thin strand drawn kilometres long from a heated preform"
+ ],
+ "GLBP": [
+  "four virtual MACs from one gateway IP — hosts load-share by ARP reply",
+  "the AVG dealing out 0007.b400.xxyy addresses round-robin",
+  "Cisco-only, for shops that found HSRP's idle standby wasteful"
+ ],
+ "GMRP/MMRP": [
+  "MMRP in 802.1ak replacing the older GARP-based GMRP",
+  "a switch registering interest before IPTV multicast reaches its ports",
+  "keeping a video stream off the 40 ports that never asked for it"
+ ],
+ "gNMI": [
+  "a Subscribe RPC streaming interface counters every 10 seconds",
+  "gnmic — the CLI that pokes routers over gRPC",
+  "OpenConfig paths like /interfaces/interface/state/counters/in-octets"
+ ],
+ "Gopher": [
+  "port 70 — menus of plain text from the University of Minnesota, 1991",
+  "gopher://gopher.floodgap.com — still serving, decades on",
+  "losing to the web partly over fears of licensing fees in 1993"
+ ],
+ "Gratuitous ARP": [
+  "a VRRP master broadcasting the virtual IP's new MAC on failover",
+  "arping -A 192.0.2.7 — telling the segment to update its caches",
+  "the Windows 'IP address conflict' popup — someone answered who shouldn't"
+ ],
+ "GRE": [
+  "IP protocol 47 — a generic envelope for almost anything",
+  "tunnel mode gre ip — carrying IPv6 islands across an IPv4 ocean",
+  "the mGRE underlay every DMVPN cloud is built on"
+ ],
+ "Group": [
+  "224.0.0.5 — all OSPF routers, one multicast address",
+  "all@example.com — one address, the whole company's inboxes",
+  "an AD security group deciding who can open the share"
+ ],
+ "gRPC": [
+  "a .proto file defining the service, codegen doing the rest",
+  "Kubernetes talking to etcd over gRPC on every cluster",
+  "port 50051 — the conventional door for hello-world services"
+ ],
+ "GTP": [
+  "GTP-U on UDP 2152 — your phone's packets tunnelled through the core",
+  "a TEID labelling each subscriber's tunnel from eNodeB to gateway",
+  "the encapsulation that makes handover between cell towers seamless"
+ ],
+ "GVRP": [
+  "gvrp enable on a trunk — VLAN 30 appears without anyone typing it",
+  "built on GARP in classic 802.1Q, later succeeded by MVRP",
+  "switches gossiping VLAN membership so trunks prune themselves"
+ ],
+ "gzip": [
+  "gzip -9 access.log — DEFLATE squeezing hardest",
+  "Content-Encoding: gzip — the web's default diet",
+  "magic bytes 1f 8b at the front of every .gz"
+ ],
+ "H.323": [
+  "ITU-T's 1996 VoIP suite — gatekeepers, H.225, H.245, the works",
+  "call setup knocking on TCP port 1720",
+  "Microsoft NetMeeting calls in a 1998 office"
+ ],
+ "Handshake": [
+  "SYN, SYN-ACK, ACK — three packets before a single byte of data",
+  "a TLS ClientHello opening negotiations",
+  "the dial-up modem screech — two modems agreeing at full volume"
+ ],
+ "HDLC": [
+  "the default encapsulation on a Cisco serial interface",
+  "flag byte 0x7E marking both ends of every frame",
+  "bit stuffing — a zero jammed in after five consecutive ones"
+ ],
+ "HSRP": [
+  "standby 1 ip 192.0.2.1 — priority 110, preempt",
+  "virtual MAC 0000.0c07.ac01 — group number in the last octet",
+  "hellos to 224.0.0.2 on UDP 1985, three missed and the standby takes over"
+ ],
+ "HTTP": [
+  "GET / HTTP/1.1 — the request that fetches a homepage",
+  "404 Not Found — the status code that escaped into pop culture",
+  "telnet example.com 80 and typing the request by hand"
+ ],
+ "HTTP/1.1": [
+  "the Host: header — thousands of sites sharing one IP address",
+  "Connection: keep-alive — stop rebuilding TCP for every image",
+  "Transfer-Encoding: chunked — sending before you know the length"
+ ],
+ "HTTP/2": [
+  "born as Google's SPDY, standardised as RFC 7540 in 2015",
+  "HPACK squeezing repetitive headers down to a few bytes",
+  "ALPN whispering 'h2' during the TLS handshake"
+ ],
+ "HTTP/3": [
+  "RFC 9114 — HTTP over QUIC, riding UDP port 443",
+  "Alt-Svc: h3=\":443\" — the hint that upgrades your next visit",
+  "Google and Cloudflare serving a hefty slice of the web over it today"
+ ],
+ "HTTPS": [
+  "port 443 — where most of the internet actually lives now",
+  "the padlock in the address bar, earned by a valid certificate",
+  "Let's Encrypt issuing free certs and making 'the clear' the exception"
+ ],
+ "Hub": [
+  "a 10BASE-T hub repeating every frame out every port, collisions included",
+  "one big half-duplex collision domain for the whole office",
+  "a sniffer's best friend — plug in anywhere, see everything"
+ ],
+ "HWMP": [
+  "802.11s — PREQ and PREP frames finding paths through a Wi-Fi mesh",
+  "the OLPC XO laptop's draft-11s mesh, kids' machines relaying for each other",
+  "an airtime link metric picking routes by radio quality, not hop count"
+ ],
+ "ICE": [
+  "a=candidate ... typ srflx — an SDP candidate found via STUN",
+  "WebRTC in Google Meet probing host, reflexive, and relay pairs",
+  "falling back to a TURN relay when both peers sit behind NAT"
+ ],
+ "ICMP": [
+  "ping 8.8.8.8 — echo request, type 8",
+  "TTL exceeded (type 11) — the message traceroute is built on",
+  "destination unreachable, port unreachable — type 3, code 3"
+ ],
+ "ICMPv6": [
+  "Neighbor Solicitation (type 135) — ARP's job, now ICMPv6's",
+  "Router Advertisement (type 134) handing hosts their prefix",
+  "Packet Too Big (type 2) — firewall it away and PMTUD breaks"
+ ],
+ "IGMP": [
+  "a smart TV joining 239.255.255.250 to hear SSDP",
+  "an IPTV set-top box joining one multicast group per channel",
+  "a Membership Report sent the moment a host tunes in"
+ ],
+ "IGMP Snooping": [
+  "a switch forwarding IPTV only to the ports that asked for it",
+  "without it, every multicast frame floods all 48 ports",
+  "the switch eavesdropping on Membership Reports to build its table"
+ ],
+ "IGMPv2": [
+  "Leave Group sent to 224.0.0.2 when you change the channel",
+  "a Group-Specific Query — 'anyone still watching?'",
+  "the fix that made IPTV channel-zapping bearable"
+ ],
+ "IGMPv3": [
+  "join 232.1.1.1 but only from source 198.51.100.9",
+  "INCLUDE and EXCLUDE source lists in a Membership Report",
+  "the version source-specific multicast needs to work at all"
+ ],
+ "IGRP": [
+  "router igrp 100 — a config line you will never type again",
+  "Cisco pulled it from IOS 12.3; EIGRP took its job",
+  "a metric cooked from bandwidth and delay, 1986 vintage"
+ ],
+ "IKE": [
+  "UDP 500 — where the negotiation lives",
+  "Phase 1 builds the secure channel, Phase 2 the IPsec SAs",
+  "a Diffie-Hellman exchange before a single ESP packet flows"
+ ],
+ "IKEv2": [
+  "the built-in VPN type on Windows, iOS, and Android",
+  "a strongSwan tunnel surviving a Wi-Fi-to-LTE hop via MOBIKE",
+  "RFC 7296 — four messages where IKEv1 Main Mode needed six"
+ ],
+ "IMAP": [
+  "port 143, or 993 wrapped in TLS",
+  "Gmail and Thunderbird agreeing on the same read/unread flags",
+  "a SELECT INBOX before fetching message 1"
+ ],
+ "Inverse ARP": [
+  "learning the far end's IP across DLCI 100",
+  "frame-relay maps built automatically instead of by hand",
+  "RFC 2390 — ARP's question, asked backwards"
+ ],
+ "INVITE": [
+  "INVITE sip:bob@example.com SIP/2.0 — a call begins",
+  "what your desk phone sends the moment you finish dialling",
+  "answered with 180 Ringing, then 200 OK"
+ ],
+ "IP": [
+  "a header with source 192.0.2.7 and destination 8.8.8.8",
+  "TTL 64, decremented at every router along the way",
+  "RFC 791, 1981 — still the internet's centre of gravity"
+ ],
+ "IP Source Guard": [
+  "dropping packets claiming 192.0.2.7 from a port that leased .50",
+  "ip verify source — the Cisco knob that turns it on",
+  "built on the DHCP snooping binding table"
+ ],
+ "IP-in-IP": [
+  "IP protocol 4 — an IPv4 header wrapped around another",
+  "ip tunnel add mode ipip — one line in Linux",
+  "Calico carrying pod traffic between Kubernetes nodes"
+ ],
+ "IPCP": [
+  "PPP protocol 0x8021 — IPCP's number on the wire",
+  "your DSL router getting its WAN address without DHCP",
+  "DNS servers handed over as options 129 and 131"
+ ],
+ "IPsec": [
+  "ESP, IP protocol 50 — the encrypted payload",
+  "a site-to-site tunnel between two office firewalls",
+  "AH, protocol 51 — authentication without the encryption"
+ ],
+ "IPv4": [
+  "192.168.1.1 — the address on a billion router stickers",
+  "ARIN's free pool hit zero in September 2015",
+  "a dotted quad: four bytes, 0.0.0.0 through 255.255.255.255"
+ ],
+ "IPv6": [
+  "2001:db8::1 — eight hex groups, mercifully abbreviated",
+  "340 undecillion addresses — a /64 per coffee shop, no sweat",
+  "switched on for good on World IPv6 Launch day, 6 June 2012"
+ ],
+ "IPX": [
+  "NetWare servers feeding DOS clients all through the early 90s",
+  "an address that is just the network number plus your MAC",
+  "Doom's LAN multiplayer ran on it in 1993"
+ ],
+ "IPX RIP": [
+  "NetWare routers swapping full tables every 60 seconds",
+  "a metric in ticks — eighteenths of a second — then hops",
+  "the chatter on every Novell LAN, whether you asked or not"
+ ],
+ "IRC": [
+  "port 6667, or 6697 with TLS",
+  "/join #linux — and you're in",
+  "Libera.Chat still hosting open-source project channels today"
+ ],
+ "IS-IS": [
+  "quietly running big ISP backbones since the early 90s",
+  "NSAP addresses like 49.0001.1921.6800.1001.00",
+  "Level 1 and Level 2 where OSPF would say areas"
+ ],
+ "ISATAP": [
+  "addresses ending ::5efe:192.0.2.7 — IPv4 stitched into the IID",
+  "Windows once looked up the hostname 'isatap' automatically",
+  "RFC 5214 — IPv6 islands across an IPv4 office network"
+ ],
+ "ISDN": [
+  "BRI: two 64 kbps B channels plus a 16 kbps D channel",
+  "128 kbps by bonding both B channels — broadband, 1995-style",
+  "radio stations kept it for studio-quality remote audio"
+ ],
+ "JPEG": [
+  "the .jpg behind nearly every holiday photo on the web",
+  "8x8 DCT blocks — why heavy compression goes blocky",
+  "quality 85 — the web's favourite compromise"
+ ],
+ "JSON": [
+  "{\"name\": \"sandy\", \"port\": 443}",
+  "Content-Type: application/json — what nearly every REST API speaks",
+  "discovered, not invented, Douglas Crockford insists"
+ ],
+ "Kerberos": [
+  "every Active Directory login since Windows 2000",
+  "port 88 — where the KDC listens",
+  "a TGT good for 10 hours, clocks within 5 minutes or else"
+ ],
+ "Key": [
+  "a 256-bit AES key — 32 bytes between you and everyone else",
+  "ssh-keygen -t ed25519 — minting one in your terminal",
+  "the WPA2 passphrase taped under the office router"
+ ],
+ "L2TP": [
+  "UDP 1701 — its port",
+  "paired with IPsec in every OS's built-in VPN menu",
+  "your ISP handing DSL PPP sessions off to a wholesale carrier"
+ ],
+ "L2TPv3": [
+  "RFC 3931 — pseudowires without needing MPLS",
+  "stretching a VLAN between two data centres over plain IP",
+  "carrying whole ethernet frames now, not just PPP"
+ ],
+ "Label": [
+  "an MPLS label — 20 bits wedged between Layer 2 and Layer 3",
+  "label 16 in, label 17 out, next hop — forwarding by sticker",
+  "a luggage tag: routed by the tag, never by the contents"
+ ],
+ "LACP": [
+  "four 10G links bundled into one 40G port-channel",
+  "LACPDUs to 01:80:c2:00:00:02, every second on fast rate",
+  "channel-group 1 mode active — the Cisco incantation"
+ ],
+ "LAPB": [
+  "the HDLC-derived link under every X.25 circuit",
+  "sequence numbers and retransmission, done at Layer 2",
+  "bank card terminals once rode on it via X.25"
+ ],
+ "LCP": [
+  "PPP protocol 0xc021 — LCP's number on the wire",
+  "Configure-Request, Configure-Ack — and the link comes up",
+  "Echo-Request as PPP's heartbeat"
+ ],
+ "LDAP": [
+  "port 389, or 636 with TLS",
+  "cn=Sandy,ou=Engineering,dc=example,dc=com",
+  "what apps speak to Active Directory to ask 'who is this?'"
+ ],
+ "LDP": [
+  "UDP 646 hellos, then a TCP 646 session between neighbours",
+  "a label handed out for every route the IGP already knows",
+  "RFC 5036 — the lazy way to light up an MPLS core"
+ ],
+ "Legacy": [
+  "Windows XP still driving an MRI scanner",
+  "COBOL clearing your paycheck every other Friday",
+  "SMBv1 kept alive because the door-badge system needs it"
+ ],
+ "Light": [
+  "1310 and 1550 nm — fibre's favourite wavelengths",
+  "an SFP turning bits into photons and back",
+  "submarine cables blinking nearly all intercontinental traffic"
+ ],
+ "Link OAM": [
+  "dying gasp — the modem's last frame as the power fails",
+  "loopback-testing a subscriber line from the exchange",
+  "a slow protocol, capped at 10 frames per second"
+ ],
+ "Link State": [
+  "OSPF flooding LSAs until every router holds the same map",
+  "IS-IS doing the same trick with LSPs",
+  "Dijkstra's 1959 algorithm, re-run on every topology change"
+ ],
+ "LISP": [
+  "your EID stays put as you roam; the RLOC moves with you",
+  "map-and-encap — ask the mapping system, then tunnel",
+  "Cisco SD-Access running it under the hood"
+ ],
+ "LLDP": [
+  "show lldp neighbors — who's on the other end of port 12",
+  "frames to 01:80:c2:00:00:0e every 30 seconds",
+  "IEEE 802.1AB — what CDP wished it was: vendor-neutral"
+ ],
+ "LLDP-MED": [
+  "an IP phone learning its voice VLAN the moment it boots",
+  "PoE power negotiated down to the watt",
+  "location data for when someone dials 911 from a desk phone"
+ ],
+ "LLMNR": [
+  "UDP 5355 to multicast 224.0.0.252",
+  "resolving 'printer-room2' when DNS just shrugs",
+  "Responder poisoning it — the pentester's oldest trick"
+ ],
+ "LMI": [
+  "keepalives on DLCI 1023 between router and Frame Relay switch",
+  "a status enquiry every 10 seconds, full status every sixth",
+  "three dialects to pick from: cisco, ansi, q933a"
+ ],
+ "LocalTalk": [
+  "230.4 kbps over the Mac's serial printer port",
+  "PhoneNet running it over spare telephone wire",
+  "how a whole 1980s office shared one LaserWriter"
+ ],
+ "Loop": [
+  "a broadcast storm two seconds after the wrong patch cable",
+  "someone plugging both wall jacks into the same desk switch",
+  "ring topologies doing it on purpose — with protection"
+ ],
+ "Loop Guard": [
+  "spanning-tree guard loop — the Cisco interface command",
+  "a port going loop-inconsistent instead of opening a loop",
+  "saves you when a one-way fibre quietly eats the BPDUs"
+ ],
+ "LoRaWAN": [
+  "868 MHz in Europe, 915 MHz in the US",
+  "a water meter reporting once a day for ten years on one cell",
+  "The Things Network — community gateways across the world"
+ ],
+ "LWAPP": [
+  "Cisco Aironet APs phoning home to a WLC",
+  "UDP 12222 for data, 12223 for control",
+  "retired by CAPWAP (RFC 5415), the standard it inspired"
+ ],
+ "MAC Address": [
+  "00:00:5e:00:53:2a — six bytes, the first three name the vendor",
+  "ff:ff:ff:ff:ff:ff — broadcast, everyone listens",
+  "your phone randomising it per Wi-Fi network to dodge tracking"
+ ],
+ "MAC Flapping": [
+  "%SW_MATM-4-MACFLAP_NOTIF filling the switch log",
+  "00:00:5e:00:53:2a seen on Gi1/0/1, then Gi1/0/24, then back",
+  "the classic smell of a loop or a misconfigured bond"
+ ],
+ "MACsec": [
+  "802.1AE at line rate between switch and access port",
+  "GCM-AES-128 on every frame, hop by hop",
+  "data-centre interconnects encrypted at 100G in silicon"
+ ],
+ "Main Mode": [
+  "IKEv1 phase 1 done the careful way — six messages",
+  "identities kept encrypted, unlike Aggressive Mode's shortcut",
+  "the slow handshake before any IPsec SA exists"
+ ],
+ "MAP-E": [
+  "RFC 7597 — IPv4 service over an IPv6-only ISP",
+  "Japan's v6plus running home broadband IPv4 this way",
+  "a shared public IPv4 address plus your slice of its ports"
+ ],
+ "MAP-T": [
+  "RFC 7599 — same math as MAP-E, translation instead of tunnel",
+  "the packet travels as genuine IPv6, no extra header",
+  "Charter's cable network moving IPv4 across an IPv6 core"
+ ],
+ "Markup": [
+  "<h1>Hello</h1> — HTML telling text it's a heading",
+  "**bold** in Markdown",
+  "<?xml version=\"1.0\"?> — the prologue of a billion configs"
+ ],
+ "mDNS": [
+  "UDP 5353 to 224.0.0.251",
+  "printer.local found with zero configuration",
+  "Apple's Bonjour announcing your AirPlay speaker"
+ ],
+ "Mesh": [
+  "NYC Mesh — rooftop antennas instead of an ISP bill",
+  "guifi.net — a community mesh blanketing Catalonia",
+  "Zigbee bulbs relaying for each other across the house"
+ ],
+ "Message": [
+  "an email sitting unread in an inbox",
+  "the first SMS, 1992 — \"Merry Christmas\"",
+  "one MQTT publish — a topic and a payload"
+ ],
+ "MessagePack": [
+  "0xc3 — the single byte that means true",
+  "Fluentd shipping logs node-to-node as msgpack",
+  "Tarantool storing every tuple as MessagePack"
+ ],
+ "Metric": [
+  "RIP counts hops — 16 means unreachable",
+  "OSPF cost 1 for 100 Mbit at the default reference bandwidth",
+  "EIGRP blending bandwidth and delay into one big number"
+ ],
+ "mGRE": [
+  "tunnel mode gre multipoint — one interface, many spokes",
+  "one hub interface serving 500 branch routers",
+  "the underlay trick that makes DMVPN possible"
+ ],
+ "MIME": [
+  "Content-Type: text/html; charset=utf-8",
+  "multipart/form-data carrying a file upload",
+  "a cat photo riding email as base64"
+ ],
+ "MIPv6": [
+  "RFC 6275 — the Mobility Header bolted into IPv6",
+  "a Binding Update telling the home agent where you roamed",
+  "route optimisation — peers talk straight to your care-of address"
+ ],
+ "MLD": [
+  "ICMPv6 type 130 — a Multicast Listener Query",
+  "a host joining ff02::fb to hear mDNS",
+  "RFC 2710 — IGMPv2 logic in IPv6 packaging"
+ ],
+ "MLDv2": [
+  "RFC 3810 — this group, but only from that source",
+  "type 143 reports sent to ff02::16",
+  "INCLUDE and EXCLUDE source lists per group"
+ ],
+ "Mobile IP": [
+  "RFC 5944 — a home agent tunnelling packets to your care-of address",
+  "triangle routing — every reply detours through home",
+  "a foreign agent advertising care-of addresses to visitors"
+ ],
+ "Mobility": [
+  "a phone call surviving the drive across town",
+  "eduroam — one login, any campus on Earth",
+  "your laptop hopping from Wi-Fi to hotspot, VPN intact"
+ ],
+ "Modem": [
+  "the 56k handshake screech",
+  "Hayes AT commands — ATDT to dial",
+  "a DOCSIS cable modem pushing gigabit down old coax"
+ ],
+ "Monitoring": [
+  "Nagios paging you at 3am about disk space",
+  "SNMP polling an interface counter every 30 seconds",
+  "a Grafana dashboard glowing green on the NOC wall"
+ ],
+ "MOSPF": [
+  "RFC 1584 — group-membership LSAs in the link-state database",
+  "the type 6 LSA most routers never learned to read",
+  "specified in 1994, deployed almost nowhere — PIM won"
+ ],
+ "MP-BGP": [
+  "AFI 1, SAFI 128 — VPNv4 routes for MPLS VPNs",
+  "RFC 4760 — MP_REACH_NLRI carrying non-IPv4 worlds",
+  "EVPN type-2 routes shipping MAC addresses over BGP"
+ ],
+ "MPLS": [
+  "push, swap, pop — a label's whole life",
+  "label 3 — implicit null, pop me before delivery",
+  "a 20-bit label deciding the path, not the IP header"
+ ],
+ "MPLS L3VPN": [
+  "RFC 4364 — route distinguisher 65000:100 keeping customers apart",
+  "vrf CUSTOMER-A configured on a PE router",
+  "two customers both using 10.0.0.0/8, neither noticing"
+ ],
+ "MPLS-TE": [
+  "an RSVP-TE tunnel reserving bandwidth along an explicit path",
+  "steering traffic off the congested link the IGP insists on",
+  "fast reroute — a pre-built backup path live in 50 ms"
+ ],
+ "MPTCP": [
+  "Siri — Wi-Fi and LTE carrying one stream since iOS 7",
+  "RFC 8684 — MP_CAPABLE riding in the SYN",
+  "a download surviving the walk out of Wi-Fi range"
+ ],
+ "MQTT": [
+  "a thermostat publishing home/livingroom/temp 21.5",
+  "port 1883 — or 8883 with TLS",
+  "early Facebook Messenger used it to spare phone batteries"
+ ],
+ "MSDP": [
+  "RFC 3618 — Source-Active messages between rendezvous points",
+  "TCP port 639 linking RPs in different domains",
+  "the glue behind anycast-RP deployments"
+ ],
+ "MSTP": [
+  "VLANs 10-19 on instance 1, 20-29 on instance 2 — both uplinks busy",
+  "spanning-tree mode mst on a Catalyst",
+  "region name, revision, and VLAN map must match on every switch"
+ ],
+ "mTLS": [
+  "Istio sidecars swapping client certs inside a service mesh",
+  "CertificateRequest — the server asking for ID for a change",
+  "a banking API that hangs up without your client cert"
+ ],
+ "Multicast Routing": [
+  "PIM sparse mode building a shared tree from the RP",
+  "IPTV — one video stream, a million set-top boxes",
+  "224.0.0.0/4 — the old class D playground"
+ ],
+ "Multilink PPP": [
+  "RFC 1990 — two 64k ISDN B-channels posing as 128k",
+  "fragments sequenced and reassembled across member links",
+  "ppp multilink on both ends of the bundle"
+ ],
+ "MVRP": [
+  "a switch announcing \"I need VLAN 30\" up the trunk",
+  "802.1ak — MRP's first registered customer",
+  "VLANs pruned off trunks automatically, no hand-editing"
+ ],
+ "Name": [
+  "www — the most typed hostname on Earth",
+  "example.com — reserved so manuals can't break anything",
+  "localhost — the name that always means you"
+ ],
+ "NAT": [
+  "192.168.1.0/24 at home, hidden behind one public IP",
+  "iptables -t nat -A POSTROUTING -j MASQUERADE",
+  "RFC 1918 — the panic that bought IPv4 thirty more years"
+ ],
+ "NAT-PT": [
+  "RFC 2766 — reclassified historic by RFC 4966",
+  "a DNS-ALG rewriting answers in flight — what could go wrong",
+  "the v6/v4 translator the IETF formally told everyone to drop"
+ ],
+ "NAT-T": [
+  "ESP wrapped in UDP port 4500",
+  "RFC 3948 — IPsec sneaking through your home router",
+  "NAT-D payloads spotting the middlebox during IKE"
+ ],
+ "NAT64": [
+  "64:ff9b::8.8.8.8 — an IPv4 server in a v6 disguise",
+  "T-Mobile US — IPv6-only phones reaching the v4 internet",
+  "RFC 6146, with DNS64 forging the AAAA records"
+ ],
+ "NDP": [
+  "a Neighbor Solicitation to ff02::1:ff00:1 — who has this address?",
+  "a Router Advertisement handing out the /64 prefix",
+  "ICMPv6 types 133-137 — five messages replacing ARP and more"
+ ],
+ "Neighbour": [
+  "2-Way, then ExStart — an OSPF adjacency forming",
+  "show ip bgp neighbors and its wall of state",
+  "a hello every 10 seconds, declared dead after 40 silent ones"
+ ],
+ "NetBEUI": [
+  "Windows for Workgroups LANs, circa 1993",
+  "quick on one segment, lost the moment a router appears",
+  "what your NT 4.0 server spoke to the print room"
+ ],
+ "NetBIOS": [
+  "ports 137, 138, 139 — name, datagram, session",
+  "\\\\ACCOUNTS-PC showing up in Network Neighborhood",
+  "a 16th name byte saying workstation or server"
+ ],
+ "NETCONF": [
+  "RFC 6241 over SSH port 830",
+  "<edit-config> against the candidate datastore, then commit",
+  "YANG-modelled XML instead of screen-scraped CLI"
+ ],
+ "NFS": [
+  "mount -t nfs server:/export /mnt",
+  "port 2049 — remote file I/O since Sun shipped it in 1984",
+  "/home on the file server, identical from every lab machine"
+ ],
+ "NHRP": [
+  "RFC 2332 — a spoke asking the hub for another spoke's real address",
+  "a Resolution Request, then a direct spoke-to-spoke tunnel",
+  "DMVPN's directory service"
+ ],
+ "NNTP": [
+  "port 119 — Usenet's delivery van",
+  "Linus announcing Linux on comp.os.minix, 1991",
+  "GROUP, ARTICLE, POST — reading news one command at a time"
+ ],
+ "NTP": [
+  "pool.ntp.org — volunteer clocks for the whole internet",
+  "UDP port 123, stratum 1 fed by atomic clocks",
+  "time.google.com smearing leap seconds across a day"
+ ],
+ "Number": [
+  "port 80 — a number that means web",
+  "2^32 IPv4 addresses, and we ran out anyway",
+  "TTL 64 — a number counting down to oblivion"
+ ],
+ "NVGRE": [
+  "a 24-bit VSID stuffed in the GRE key field",
+  "Hyper-V network virtualisation, the Microsoft way",
+  "VXLAN's rival — same idea, GRE jacket; VXLAN won"
+ ],
+ "ODR": [
+  "router odr on the hub, nothing at all on the spokes",
+  "stub routes learned from CDP hellos",
+  "for the branch with one router and one default route"
+ ],
+ "OLSR": [
+  "RFC 3626 — multipoint relays trimming the flood",
+  "Freifunk's Berlin rooftop mesh ran on it",
+  "olsrd humming on a Linksys WRT54G"
+ ],
+ "ONC-RPC": [
+  "program 100003 — NFS, its most famous customer",
+  "rpcbind on port 111 telling you where services live",
+  "XDR marshalling arguments since SunOS days"
+ ],
+ "OpenVPN": [
+  "UDP 1194 with a .ovpn file in hand",
+  "tun0 appearing after the TLS handshake",
+  "the engine inside most commercial \"VPN apps\" for years"
+ ],
+ "OSPF": [
+  "hellos to 224.0.0.5, IP protocol 89",
+  "area 0 — the backbone everything must touch",
+  "a DR election decided by priority, then router-ID"
+ ],
+ "OSPFv3": [
+  "RFC 5340 — adjacencies formed over link-local addresses",
+  "hellos to ff02::5",
+  "prefixes moved out into type 8 and type 9 LSAs"
+ ],
+ "OTV": [
+  "Nexus 7000s stretching VLAN 100 between two data centres",
+  "MAC routing — addresses advertised by a control plane, not flooded",
+  "vMotion across town without re-IP-ing the VM"
+ ],
+ "Packet": [
+  "an IPv4 header — version, TTL, checksum, 20 bytes of bureaucracy",
+  "tcpdump -i eth0 watching them fly past",
+  "65,535 bytes allowed, 1,500 in practice"
+ ],
+ "PAgP": [
+  "channel-group 1 mode desirable on a Catalyst",
+  "auto plus auto — two switches politely never bundling",
+  "ousted by LACP everywhere that isn't all-Cisco"
+ ],
+ "PAP": [
+  "username and password crossing the wire in plain ASCII",
+  "ppp authentication pap — better than nothing, barely",
+  "sniff the link once and you own the account"
+ ],
+ "PAT": [
+  "the whole office sharing one IP, sorted by source port",
+  "192.168.1.50:51234 leaves as 203.0.113.1:30000",
+  "ip nat inside source list 1 interface g0/0 overload"
+ ],
+ "Path": [
+  "traceroute showing 14 hops to Tokyo",
+  "home router, ISP, exchange, ocean cable, ISP, server",
+  "AS_PATH 3356 13335 in a BGP table"
+ ],
+ "PBB": [
+  "a customer frame wrapped whole in the provider's MAC header",
+  "the 24-bit I-SID — sixteen million service instances",
+  "B-MACs in the core, so it never learns customer MACs"
+ ],
+ "Peer-to-Peer": [
+  "BitTorrent — every downloader also uploading",
+  "Skype's early supernodes, before Microsoft centralised it",
+  "Bitcoin nodes gossiping blocks on port 8333"
+ ],
+ "PFC": [
+  "priority 3 paused so FCoE never drops a frame",
+  "the PAUSE frame, refined into per-class surgery",
+  "what keeps RoCE lossless on a data-centre fabric"
+ ],
+ "PFS": [
+  "ephemeral Diffie-Hellman — old traffic safe even if today's key leaks",
+  "ECDHE suites — the only kind TLS 1.3 allows",
+  "Heartbleed stole keys; PFS kept old captures unreadable"
+ ],
+ "Phase 1": [
+  "main mode — six messages to a trusted channel",
+  "aggressive mode — three messages and an exposed identity",
+  "ISAKMP on UDP 500, cookies exchanged first"
+ ],
+ "Phase 2": [
+  "quick mode — three messages riding the Phase 1 channel",
+  "negotiating ESP with AES and a fresh key for the data",
+  "one IKE SA spawning many child IPsec SAs"
+ ],
+ "PIM": [
+  "ip pim sparse-mode — one line per interface and multicast lives",
+  "hellos to 224.0.0.13 — where PIM routers find each other",
+  "IP protocol 103 — no transport, just multicast plumbing"
+ ],
+ "PIM-DM": [
+  "flood everywhere, then prune back — state resets every ~3 minutes",
+  "a campus IPTV trial saturating links nobody subscribed on",
+  "fine for a lab, a menace on a WAN"
+ ],
+ "PIM-SM": [
+  "ip pim rp-address 192.0.2.1 — everyone meets at the RP",
+  "the (*,G) shared tree, then a switch to the shortest path",
+  "Auto-RP or BSR electing which router gets to be the meeting point"
+ ],
+ "PIM-SSM": [
+  "232.0.0.0/8 — the address block reserved for source-specific groups",
+  "an IGMPv3 join for (198.51.100.7, 232.1.1.1) — that sender only",
+  "carrier IPTV channels delivered as pure (S,G) trees"
+ ],
+ "Ping": [
+  "ping 8.8.8.8 — the first reflex when the internet feels down",
+  "64 bytes from 192.0.2.1: icmp_seq=1 ttl=64 time=1.2 ms",
+  "ping -t on Windows, left running all afternoon during the outage"
+ ],
+ "PKI": [
+  "Let's Encrypt — free certificates, renewed by ACME robots",
+  "a CSR signed into a chain that ends at a root CA",
+  "the root certificate bundle shipped inside every browser"
+ ],
+ "PMIPv6": [
+  "RFC 5213 — the network moves, your phone's address doesn't",
+  "a Mobile Access Gateway tunneling to the Local Mobility Anchor",
+  "carrier Wi-Fi handoffs with no mobility client installed"
+ ],
+ "PNG": [
+  "the \\x89PNG magic bytes opening every file",
+  "a screenshot saved without JPEG smudge",
+  "logo.png — crisp edges and an alpha channel"
+ ],
+ "Policy": [
+  "deny all, then allow 443 outbound — the firewall's worldview",
+  "BGP local-preference 200 — prefer the cheaper transit",
+  "the acceptable-use agreement nobody reads before clicking Accept"
+ ],
+ "Policy-Based VPN": [
+  "crypto map matching access-list 101 — that's the interesting traffic",
+  "permit ip 192.0.2.0 0.0.0.255 198.51.100.0 0.0.0.255 — then encrypt",
+  "an ASA crypto ACL deciding packet by packet what enters the tunnel"
+ ],
+ "POP3": [
+  "port 110 in the clear, 995 with TLS",
+  "RETR 1 then DELE 1 — fetch it, forget it",
+  "Outlook Express pulling mail down to one PC, gone from the server"
+ ],
+ "Port": [
+  "443 — where HTTPS listens",
+  "22 — SSH's front door",
+  "3389 — RDP, best kept off the open internet"
+ ],
+ "PortFast": [
+  "spanning-tree portfast on every desk-facing access port",
+  "the PC gets its DHCP lease without the 30-second STP wait",
+  "paired with BPDU Guard, in case someone plugs in a switch anyway"
+ ],
+ "POS": [
+  "an OC-192 backbone link carrying IP at roughly 10 Gb/s",
+  "PPP in HDLC-like framing dropped straight onto SONET",
+  "the core of 2000s carrier backbones, before Ethernet ate everything"
+ ],
+ "PPP": [
+  "LCP negotiates, CHAP challenges, IPCP hands out an address",
+  "the link layer under every dial-up modem session",
+  "Multilink PPP bonding two ISDN B-channels into one pipe"
+ ],
+ "PPPoA": [
+  "VPI/VCI 0/38 — the classic UK DSL circuit settings",
+  "PPP straight onto an ATM virtual circuit, no Ethernet framing tax",
+  "the login method baked into a generation of DSL modems"
+ ],
+ "PPPoE": [
+  "username@isp.example and a password to bring the DSL line up",
+  "MTU 1492 — eight bytes lost to the PPPoE header",
+  "PADI, PADO, PADR, PADS — the discovery handshake"
+ ],
+ "PPTP": [
+  "TCP 1723 plus GRE — let both through the firewall, regrettably",
+  "MS-CHAPv2 cracked in 2012 — the keys are recoverable",
+  "Windows 95 Dial-Up Networking's built-in VPN"
+ ],
+ "Protocol Buffers": [
+  "message Person { string name = 1; } in a .proto file",
+  "the wire format underneath every gRPC call",
+  "protoc --python_out=. — compile the schema, get the classes"
+ ],
+ "Proxy": [
+  "Squid caching the whole office's web traffic",
+  "the corporate proxy on port 8080, reading everything",
+  "nginx reverse-proxying to the app servers hiding behind it"
+ ],
+ "Proxy ARP": [
+  "a router answering ARP for 192.0.2.7 with its own MAC",
+  "how hosts with no default gateway still reached other subnets",
+  "on by default in old Cisco IOS — and often regretted"
+ ],
+ "Pseudowire": [
+  "EoMPLS — an Ethernet port leased across the country",
+  "RFC 4448 — Ethernet frames riding inside an MPLS LSP",
+  "a legacy E1 circuit emulated faithfully over a packet core"
+ ],
+ "PSK": [
+  "the Wi-Fi password taped to the café wall",
+  "WPA2-PSK — every laptop in the building shares one secret",
+  "an IPsec tunnel keyed with 'cisco123' since 2014"
+ ],
+ "PTP": [
+  "IEEE 1588 — timestamps applied by the NIC hardware itself",
+  "sub-microsecond clock sync on a trading floor",
+  "a GPS-disciplined grandmaster, every slave clock following"
+ ],
+ "PVST+": [
+  "40 VLANs, 40 spanning-tree instances, one busy CPU",
+  "Cisco-only BPDUs sent to 01:00:0c:cc:cc:cd",
+  "VLAN 10 blocked on one uplink while VLAN 20 forwards — by design"
+ ],
+ "Q-in-Q": [
+  "ethertype 0x88a8 outside, 0x8100 inside",
+  "a metro carrier wrapping each customer's VLANs in its own S-tag",
+  "switchport mode dot1q-tunnel — the whole trunk, encapsulated"
+ ],
+ "Query": [
+  "dig example.com MX — who takes the mail?",
+  "the question section of a DNS packet: example.com, QTYPE=A",
+  "nslookup 8.8.8.8 — asking the name of an address"
+ ],
+ "QUIC": [
+  "HTTP/3 — every Google search rides on it",
+  "UDP 443 with TLS 1.3 baked into the handshake",
+  "0-RTT — resuming a connection with zero round trips"
+ ],
+ "Quick Mode": [
+  "IKEv1's second act — negotiating the IPsec SAs under cover",
+  "fresh ESP keys on schedule, with PFS if you asked nicely",
+  "three messages inside the Phase 1 tunnel, then traffic flows"
+ ],
+ "Radio": [
+  "2.4 GHz — Wi-Fi, Bluetooth, and your microwave fighting it out",
+  "an AM broadcast carrying hundreds of miles after dark",
+  "marine VHF channel 16 — the hailing and distress frequency"
+ ],
+ "RADIUS": [
+  "UDP 1812 for authentication, 1813 for accounting",
+  "a WPA2-Enterprise login checked against the corporate directory",
+  "a shared secret between NAS and server — MD5 underneath, still"
+ ],
+ "Rapid PVST+": [
+  "spanning-tree mode rapid-pvst — Cisco's modern default",
+  "an uplink dies and each VLAN reconverges in about a second",
+  "RSTP's proposal/agreement handshake, repeated per VLAN"
+ ],
+ "RARP": [
+  "00:00:5e:00:53:2a asking the network 'what's my IP?'",
+  "RFC 903 — reverse ARP for hosts with no disk to remember",
+  "Sun workstations booting off the network in the 1980s"
+ ],
+ "RDP": [
+  "mstsc.exe and a hostname — Windows in a window",
+  "port 3389 — a favourite target of internet-wide scanners",
+  "BlueKeep, CVE-2019-0708 — the wormable RDP hole of 2019"
+ ],
+ "Redundancy": [
+  "HSRP's virtual gateway at 192.0.2.1, two real routers behind it",
+  "VRRP — one address, a master, and a backup waiting its turn",
+  "dual power supplies, dual uplinks, dual everything"
+ ],
+ "REGISTER": [
+  "a SIP phone telling its registrar 'I'm at 192.0.2.50:5060'",
+  "Contact: <sip:alice@192.0.2.50> — refreshed every 3600 seconds",
+  "the desk phone re-registering itself after every reboot"
+ ],
+ "Registrar": [
+  "the SIP server binding alice@example.com to her current address",
+  "401 challenge first, then 200 OK — you're registered",
+  "Asterisk keeping the location table for every extension"
+ ],
+ "Reliability": [
+  "TCP retransmitting the lost segment when the RTO fires",
+  "sequence and ack numbers — bookkeeping for every byte",
+  "TFTP resending block 7 until it finally hears ACK 7"
+ ],
+ "Remote Access VPN": [
+  "the AnyConnect client on a laptop in a hotel room",
+  "WireGuard on your phone — the home network from anywhere",
+  "split tunneling — corporate traffic in, Netflix kept out"
+ ],
+ "REP": [
+  "rep segment 1 edge primary — building the ring, port by port",
+  "an IE-series switch ring on the factory floor",
+  "a link fails, the alternate port opens, the robots never notice"
+ ],
+ "Request": [
+  "GET /index.html HTTP/1.1",
+  "a DHCPDISCOVER broadcast — anyone got an address for me?",
+  "a TCP SYN — may I open a connection?"
+ ],
+ "Response": [
+  "HTTP/1.1 200 OK",
+  "a DNS answer — example.com lives at 192.0.2.10",
+  "an ICMP echo reply — the pong to your ping"
+ ],
+ "Response Rate Limiting": [
+  "BIND's rate-limit { responses-per-second 5; }",
+  "a DNS server declining to amplify a spoofed flood",
+  "identical NXDOMAINs slipped down to one answer per second"
+ ],
+ "REST": [
+  "GET /users/42 returns JSON; DELETE /users/42 removes it",
+  "api.github.com — the GitHub API doing it by the book",
+  "201 Created with a Location header pointing at the new thing"
+ ],
+ "RESTCONF": [
+  "GET /restconf/data/ietf-interfaces:interfaces",
+  "RFC 8040 — YANG-modelled config over plain HTTPS",
+  "curl instead of an SSH session to configure the router"
+ ],
+ "Ring": [
+  "Token Ring at 4 or 16 Mb/s, passing the token politely",
+  "a SONET ring swinging traffic the other way in 50 ms",
+  "FDDI's dual counter-rotating fiber loops"
+ ],
+ "RIP": [
+  "UDP 520 — the whole routing table, every 30 seconds",
+  "metric 16 means infinity; fifteen hops is the whole world",
+  "router rip — two words and a small network routes itself"
+ ],
+ "RIPng": [
+  "UDP 521, multicast to ff02::9",
+  "RFC 2080 — RIP rewritten for IPv6",
+  "same fifteen-hop horizon, new address family"
+ ],
+ "RIPv2": [
+  "multicast to 224.0.0.9 instead of shouting broadcasts",
+  "RFC 2453 — subnet masks in the updates at last",
+  "MD5 authentication bolted onto the old workhorse"
+ ],
+ "rlogin": [
+  "TCP 513, trusting whatever ~/.rhosts says",
+  "rlogin server.example.com — no password if the rhosts file likes you",
+  "retired by SSH, along with rsh and rcp"
+ ],
+ "Root Bridge Hijack": [
+  "a lab switch with bridge priority 0 plugged into the office LAN",
+  "Yersinia on a laptop, spraying superior BPDUs",
+  "every VLAN's traffic quietly detouring through the attacker's port"
+ ],
+ "Root Guard": [
+  "spanning-tree guard root on all the downlinks",
+  "a superior BPDU arrives — the port goes root-inconsistent",
+  "the customer's switch may join, but it may never rule"
+ ],
+ "Route": [
+  "0.0.0.0/0 via 192.0.2.1 — the default, when nothing better matches",
+  "ip route 198.51.100.0 255.255.255.0 192.0.2.2",
+  "B 203.0.113.0/24 — learned from BGP, administrative distance 20"
+ ],
+ "Route-Based VPN": [
+  "interface Tunnel0 with an IPsec profile attached",
+  "an OSPF adjacency running happily inside the tunnel",
+  "a static route into st0.0 on a Juniper SRX"
+ ],
+ "Router": [
+  "the ISP box blinking on a shelf in the hall closet",
+  "a Cisco ISR forwarding between the LAN and the WAN",
+  "Linux with net.ipv4.ip_forward=1 — congratulations, it routes"
+ ],
+ "Routing Loop": [
+  "TTL exceeded — the packet ran in circles until it died",
+  "traceroute showing hops 7 and 8 trading the packet forever",
+  "RIP counting to infinity, two routers reassuring each other"
+ ],
+ "RPKI": [
+  "a ROA: AS13335 may originate 1.1.1.0/24",
+  "AT&T dropping RPKI-invalid routes since 2019",
+  "the five regional registries serving as trust anchors"
+ ],
+ "RSTP": [
+  "802.1w — proposal and agreement instead of waiting on timers",
+  "an alternate port stepping up the instant the root port dies",
+  "convergence in under a second, not thirty to fifty"
+ ],
+ "RSVP-TE": [
+  "PATH downstream, RESV back up — bandwidth booked hop by hop",
+  "a 10-gig LSP pinned through chosen hops with an explicit route",
+  "fast reroute — a presignaled detour ready in about 50 ms"
+ ],
+ "rsync": [
+  "rsync -avz /home backup.example.com:/backups",
+  "the delta algorithm — ship only the blocks that changed",
+  "Linux distro mirrors around the world syncing nightly"
+ ],
+ "RTCP": [
+  "a receiver report — 2% loss, 12 ms jitter, sender please note",
+  "RTP on port 5004, RTCP one up on 5005 — the odd port out",
+  "a CNAME in the sender report tying audio and video together"
+ ],
+ "RTMP": [
+  "a Mac router broadcasting its whole table every 10 seconds",
+  "hop count capped at 15 — AppleTalk's RIP indeed",
+  "how 1980s LocalTalk zones found their way to each other"
+ ],
+ "RTP": [
+  "a Zoom call's voice riding RTP over UDP",
+  "sequence number and timestamp stamped on every Opus packet",
+  "payload type 0 — good old G.711 mu-law"
+ ],
+ "Rule": [
+  "speak only when the wire is quiet — CSMA/CD",
+  "answer a SYN with a SYN-ACK; everyone agreed in RFC 793",
+  "drive on the left — unless the country agreed on right"
+ ],
+ "S/MIME": [
+  "the smime.p7s attachment riding along on a signed email",
+  "Outlook's little red ribbon — this message was signed",
+  "an encrypted payslip only your certificate can open"
+ ],
+ "SA": [
+  "ESP, AES-256, SPI 0x12345678 — one direction only",
+  "two SAs per IPsec tunnel, one for each way",
+  "ip xfrm state — a Linux gateway listing its contracts"
+ ],
+ "SBC": [
+  "an Oracle Acme Packet box parked at the carrier's edge",
+  "rewriting SDP so 192.168.x addresses never leak outside",
+  "topology hiding — callers never learn the carrier's insides"
+ ],
+ "SCP": [
+  "scp report.pdf user@198.51.100.5:/tmp/",
+  "scp -r ./site admin@example.com:/var/www",
+  "-P 2222 because someone moved SSH off port 22"
+ ],
+ "SCTP": [
+  "SIGTRAN — SS7 telephone signalling carried over IP",
+  "the transport under Diameter in 4G mobile cores",
+  "WebRTC data channels — SCTP tunnelled over DTLS"
+ ],
+ "SDLC": [
+  "IBM 3270 terminals polled by a mainframe front-end",
+  "SNA traffic on leased lines in a 1980s bank",
+  "the frame format HDLC politely borrowed and standardised"
+ ],
+ "SDP": [
+  "m=audio 49170 RTP/AVP 0 — one line, one media stream",
+  "a=sendrecv buried inside a SIP INVITE",
+  "the codec haggling inside every WebRTC offer and answer"
+ ],
+ "Segment": [
+  "1460 bytes of a download, stamped with sequence number 1072",
+  "MSS 1460 — exactly what fits inside an Ethernet frame",
+  "tcpdump showing seq 1:1461 ack 1"
+ ],
+ "Segment Routing": [
+  "label stack 16005 then 16089 — via node 5, then node 89",
+  "TI-LFA rerouting in under 50 ms with no RSVP-TE",
+  "one extra SID to steer traffic through the firewall"
+ ],
+ "Serial Line": [
+  "a Cisco console at 9600 baud, 8-N-1",
+  "RS-232 between a PC and its modem",
+  "a T1 clocked at 1.544 Mbps"
+ ],
+ "Serialization": [
+  "JSON.stringify({user: 'sandy'}) — object out, bytes back",
+  "a protobuf message squeezed down to 12 bytes",
+  "Python's pickle — convenient right up until it's a CVE"
+ ],
+ "Server": [
+  "nginx listening on 443, answering millions",
+  "the Minecraft box humming in somebody's closet",
+  "a Dell rack unit in the cold aisle, uptime 740 days"
+ ],
+ "Session": [
+  "a logged-in shopping cart that survives page reloads",
+  "PHPSESSID=8d2f… riding along in a cookie",
+  "an SSH login that lasts all afternoon"
+ ],
+ "SFTP": [
+  "sftp deploy@example.com, then put release.tgz",
+  "FileZilla on port 22, not 21",
+  "WinSCP quietly moving the backups overnight"
+ ],
+ "Signal": [
+  "+5 V then 0 V — a one, then a zero on the wire",
+  "1310 nm light pulses sprinting down a fiber",
+  "a 2.4 GHz carrier wiggling your cat photos through the air"
+ ],
+ "SIP": [
+  "INVITE sip:bob@example.com SIP/2.0",
+  "180 Ringing — heard before anyone picks up",
+  "a desk phone re-REGISTERing every 3600 seconds"
+ ],
+ "SIP ACK": [
+  "ACK sip:bob@198.51.100.20 SIP/2.0 — handshake complete",
+  "the third leg of INVITE, 200 OK, ACK",
+  "no ACK arrives, so the 200 OK keeps retransmitting"
+ ],
+ "SIP Proxy": [
+  "a Kamailio box forwarding INVITEs for a whole carrier",
+  "Via: headers stacking up, one per hop",
+  "Record-Route — the proxy insists on staying in the call path"
+ ],
+ "SIP URI": [
+  "sip:alice@example.com",
+  "sips:bob@example.com — TLS required the whole way",
+  "sip:+15551234567@gw.example.com;user=phone"
+ ],
+ "Site-to-Site VPN": [
+  "HQ to branch over IPsec, up since the last reboot",
+  "10.1.0.0/16 reaching 10.2.0.0/16 straight across the internet",
+  "two firewalls pretending to share a piece of cable"
+ ],
+ "SLAAC": [
+  "router advertises 2001:db8:1::/64; the host invents the rest",
+  "EUI-64 — your MAC address baked into your IPv6 address",
+  "privacy extensions (RFC 4941) so your MAC stays home"
+ ],
+ "SLIP": [
+  "a 14.4k modem in 1993 framing IP with byte 0xC0",
+  "no checksum, no negotiation — just END markers",
+  "what PPP mercifully replaced"
+ ],
+ "SMB/CIFS": [
+  "\\\\fileserver\\shared mapped as drive Z:",
+  "port 445 — the first thing every pentester scans",
+  "WannaCry spreading over SMBv1 in 2017"
+ ],
+ "SMTP": [
+  "MAIL FROM:<sandy@example.com>",
+  "250 OK — the mail was accepted",
+  "port 25, carrying mail server-to-server since 1982"
+ ],
+ "SNMP": [
+  "snmpget -v2c -c public 192.0.2.1 sysUpTime.0",
+  "OID 1.3.6.1.2.1 — the famous MIB-2 tree",
+  "a trap fired the instant the interface went down"
+ ],
+ "SNMPv3": [
+  "authPriv — SHA to prove who you are, AES to keep it quiet",
+  "no more 'public' community string in cleartext",
+  "snmpwalk -v3 -u admin -l authPriv 192.0.2.1"
+ ],
+ "SNTP": [
+  "a printer asking pool.ntp.org for the time once an hour",
+  "RFC 4330 — NTP with the hard maths removed",
+  "the IP camera that only needs roughly-now"
+ ],
+ "Socket": [
+  "192.0.2.7:443 — an address and a port, married",
+  "ss -t listing the ESTABLISHED pairs",
+  "bind(), listen(), accept() — and a server is born"
+ ],
+ "SOCKS": [
+  "ssh -D 1080 — an instant SOCKS proxy",
+  "Tor listening as SOCKS5 on localhost:9050",
+  "curl --socks5 198.51.100.3:1080 https://example.com"
+ ],
+ "SONET/SDH": [
+  "OC-48 — 2.488 Gbps, locked to a stratum clock",
+  "STS-1 at 51.84 Mbps, the base building block",
+  "a ring that heals in 50 ms before anyone notices"
+ ],
+ "SPB": [
+  "IS-IS computing shortest paths between switches, not routers",
+  "Avaya's SPB fabric carrying the Sochi 2014 Olympics",
+  "every link forwarding — no STP blocking half the fabric"
+ ],
+ "SPF": [
+  "v=spf1 include:_spf.google.com ~all",
+  "ip4:198.51.100.0/24 — these boxes may send for us",
+  "-all — and everyone else gets bounced"
+ ],
+ "SPI": [
+  "ESP header says SPI 0xc0ffee12 — use that SA's keys",
+  "receiver reads the SPI, finds the keys, decrypts",
+  "SPI 0 is reserved — never a real contract"
+ ],
+ "Split Horizon": [
+  "learned 10.0.0.0/8 from R2? Then never tell R2 about it",
+  "RIP's first defence against count-to-infinity",
+  "poison reverse — advertise it back, but at metric 16"
+ ],
+ "SPX": [
+  "RCONSOLE managing a NetWare server over SPX",
+  "a NetWare print queue chattering away in 1994",
+  "sequence numbers and acks, Novell-style, riding on IPX"
+ ],
+ "SRTP": [
+  "the scrambled voice inside every WebRTC call",
+  "AES counter mode keeping G.711 audio private",
+  "keys traded over DTLS-SRTP before any media flows"
+ ],
+ "SRv6": [
+  "the path written as a list of IPv6 addresses in an SRH",
+  "segments left: 2 — next stop 2001:db8::5",
+  "SoftBank running SRv6 in its backbone since 2019"
+ ],
+ "SSH": [
+  "ssh admin@198.51.100.7",
+  "the host key fingerprint prompt everyone just accepts",
+  "port 22, encrypting logins since 1995"
+ ],
+ "SSL": [
+  "SSL 3.0, 1996 — finally killed by POODLE in 2014",
+  "the Netscape padlock that started it all",
+  "SSL 2.0 — formally prohibited by RFC 6176"
+ ],
+ "SSL VPN": [
+  "OpenVPN on TCP 443 — dressed up as ordinary HTTPS",
+  "Cisco AnyConnect dialing home on port 443",
+  "the corporate web portal that tunnels you into the LAN"
+ ],
+ "Static Route": [
+  "ip route 0.0.0.0 0.0.0.0 192.0.2.1 — the default, by hand",
+  "the lab route everyone forgot to remove",
+  "no protocol overhead — and no failover either"
+ ],
+ "STOMP": [
+  "CONNECT, then SEND destination:/queue/orders",
+  "RabbitMQ speaking STOMP on port 61613",
+  "frames simple enough to type into a telnet session"
+ ],
+ "Storm Control": [
+  "broadcast suppressed above 1% of link bandwidth",
+  "storm-control broadcast level 0.5 — one Cisco port, capped",
+  "the cap that saves the floor when a loop forms"
+ ],
+ "STP": [
+  "a blocked port glowing amber on the switch",
+  "root bridge elected — lowest bridge ID wins",
+  "50 seconds of silence while classic STP converges"
+ ],
+ "Stream": [
+  "the bytes of a 4 GB ISO arriving strictly in order",
+  "no message boundaries — just byte 0 through byte N",
+  "what TCP promises that packets alone don't"
+ ],
+ "STUN": [
+  "a binding request to stun.l.google.com:19302",
+  "from out here you look like 203.0.113.9:54321",
+  "WebRTC's first move before any call connects"
+ ],
+ "Submission": [
+  "port 587 — STARTTLS, then AUTH LOGIN",
+  "RFC 6409 — clients submit here, not on 25",
+  "port 465 — submission over implicit TLS"
+ ],
+ "Subnet Mask": [
+  "255.255.255.0 — a /24 with 254 usable hosts",
+  "255.255.255.252 — a /30, just enough for two routers",
+  "one wrong mask and the neighbor is suddenly unreachable"
+ ],
+ "Switch": [
+  "a 48-port Catalyst at the top of the rack",
+  "MAC table: 00:00:5e:00:53:af lives on port 12",
+  "the dusty 8-port Netgear under the conference table"
+ ],
+ "SYN": [
+  "Flags [S], seq 1828489913 — tcpdump's opening line",
+  "the first packet of every TCP connection ever made",
+  "nmap -sS — a SYN with no intention of following through"
+ ],
+ "SYN Cookies": [
+  "the connection encoded into the ISN — no memory spent",
+  "Linux: net.ipv4.tcp_syncookies = 1",
+  "invented by Dan Bernstein in 1996, mid-flood"
+ ],
+ "SYN Flood": [
+  "the 1996 Panix attack that knocked an ISP offline",
+  "netstat drowning in SYN_RECV",
+  "thousands of handshakes started, none ever finished"
+ ],
+ "SYN-ACK": [
+  "Flags [S.], seq 2007, ack 1829 — step two of three",
+  "got your SYN; here is my sequence number",
+  "the reply a SYN flood never bothers to acknowledge"
+ ],
+ "Syslog": [
+  "UDP 514 to the central log host",
+  "<34>Oct 11 22:14:15 mymachine su: 'su root' failed",
+  "severity 0 (emergency) down to 7 (debug)"
+ ],
+ "TACACS+": [
+  "TCP 49, the whole packet body encrypted",
+  "show run permitted; reload denied — per-command control",
+  "every command the admin typed, dutifully accounted for"
+ ],
+ "Tag": [
+  "VLAN 100 stamped into an 802.1Q header",
+  "PCP 5 — voice frames jump the queue",
+  "4094 usable VLAN IDs, somehow never enough"
+ ],
+ "TCP": [
+  "port 443 — HTTPS rides on TCP",
+  "RFC 793, written in 1981 — still moving most of the internet",
+  "retransmitting your lost segment before you ever knew it was gone"
+ ],
+ "TDP": [
+  "tag switching on a 1990s Cisco 7500, before MPLS was a standard",
+  "port 711 — where TDP neighbors chatted before LDP took over",
+  "`tag-switching ip` — the IOS command that predates `mpls ip`"
+ ],
+ "Telephone": [
+  "Bell's 1876 patent — 'Mr. Watson, come here, I want to see you'",
+  "a rotary dial pulsing digits down the copper",
+  "POTS — plain old telephone service, still 48 volts on the loop"
+ ],
+ "Telnet": [
+  "telnet towel.blinkenlights.nl — Star Wars in ASCII art",
+  "port 23 — still open on far too many routers",
+  "typing a password any sniffer on the path can read"
+ ],
+ "Teredo": [
+  "2001::/32 — the prefix every Teredo address starts with",
+  "Xbox Live punching IPv6 through home NAT with it",
+  "shipped on by default in Windows Vista, to many admins' surprise"
+ ],
+ "TFTP": [
+  "UDP port 69 — no login, no directory listing, just get and put",
+  "a Cisco switch pulling its IOS image from 192.0.2.10 at boot",
+  "PXE boot fetching pxelinux.0 from the deployment server"
+ ],
+ "Three-Way Handshake": [
+  "SYN seq=100 → SYN-ACK seq=300 ack=101 → ACK ack=301",
+  "what `curl -v` does before the first HTTP byte moves",
+  "a SYN flood — sending step one a million times and ghosting"
+ ],
+ "Time": [
+  "a stratum-1 NTP server disciplined by a GPS receiver on the roof",
+  "Kerberos rejecting your login because your clock drifted five minutes",
+  "the June 2012 leap second that knocked Reddit over"
+ ],
+ "TLS": [
+  "the padlock in your browser's address bar",
+  "TLS 1.3, RFC 8446 — one round trip and you're encrypted",
+  "openssl s_client -connect example.com:443"
+ ],
+ "Token": [
+  "a 3-byte frame circling an idle Token Ring, waiting to be claimed",
+  "FDDI passing the token around a 100 km fiber ring",
+  "the conch in Lord of the Flies — same protocol, worse outcome"
+ ],
+ "Token Ring": [
+  "IBM's 4 Mbps ring of 1985, later pushed to 16 Mbps",
+  "the IBM Type 1 hermaphroditic connector — a brick on every desk",
+  "a MAU in the wiring closet — a ring wearing a star costume"
+ ],
+ "Traceroute": [
+  "traceroute 8.8.8.8 — thirty hops or bust",
+  "tracert on Windows — same trick, ICMP instead of UDP",
+  "* * * — the hop that refuses to answer"
+ ],
+ "Transform Set": [
+  "esp-aes 256 with esp-sha256-hmac — a Cisco classic",
+  "`crypto ipsec transform-set TS esp-aes esp-sha-hmac`",
+  "both peers must offer a match or Phase 2 dies quietly"
+ ],
+ "Transport Mode": [
+  "host-to-host IPsec between two servers in the same data center",
+  "Windows domain isolation — ESP around the payload, header untouched",
+  "the original IP header still visible; only the TCP inside is wrapped"
+ ],
+ "TRILL": [
+  "RBridges running IS-IS at layer 2 instead of blocking links",
+  "Radia Perlman fixing her own spanning tree, decades later",
+  "Cisco FabricPath — TRILL's proprietary cousin in the data center"
+ ],
+ "Trunk": [
+  "`switchport mode trunk` — the IOS incantation",
+  "an 802.1Q tag — four bytes wedged into the Ethernet header",
+  "the native VLAN — the one frame that rides untagged"
+ ],
+ "Trust": [
+  "a root CA in your OS store vouching for example.com",
+  "DigiNotar, 2011 — what happens when a root betrays you",
+  "ssh asking 'are you sure you want to continue connecting?'"
+ ],
+ "TTL": [
+  "64 from Linux, 128 from Windows — OS fingerprinting by default",
+  "ICMP Time Exceeded — the death notice traceroute collects",
+  "renamed Hop Limit in IPv6, since nobody ever counted seconds"
+ ],
+ "Tunnel": [
+  "GRE carrying IPv6 across a stubbornly IPv4 core",
+  "ssh -L 8080:localhost:80 — a tunnel one user can dig",
+  "6in4 to Hurricane Electric's tunnel broker"
+ ],
+ "Tunnel Mode": [
+  "site-to-site IPsec between the branch firewall and HQ",
+  "the whole original packet — header and all — sealed inside ESP",
+  "two gateways swapping encrypted blobs across the public internet"
+ ],
+ "TURN": [
+  "the relay candidate in an ICE negotiation — the last resort",
+  "port 3478 — shared with STUN, its lighter sibling",
+  "coturn — the open-source relay behind countless video calls"
+ ],
+ "UDLD": [
+  "TX strand fine, RX strand dead — UDLD errdisables the port",
+  "`udld aggressive` on every Cisco fiber uplink",
+  "stopping the one-way link that tricks spanning tree into a loop"
+ ],
+ "UDP": [
+  "DNS queries on port 53 — ask once, hope",
+  "every Zoom packet — late audio is worthless audio",
+  "QUIC — an entire reliable transport rebuilt on top of it"
+ ],
+ "Unicode": [
+  "U+0041 is A; U+00C5 is Å — one number per character",
+  "U+1F4A9 — yes, the pile of poo has a code point",
+  "the snowman, U+2603 — in the standard since 1993"
+ ],
+ "User Agent": [
+  "a softphone like Zoiper registering itself to the PBX",
+  "your desk phone — user agent client and server in one box",
+  "the User-Agent: header — same name, HTTP's version of the idea"
+ ],
+ "UTF-8": [
+  "'é' on the wire as 0xC3 0xA9 — two bytes, one character",
+  "plain ASCII is already valid UTF-8 — that was the whole trick",
+  "Ken Thompson sketching it on a diner placemat in 1992"
+ ],
+ "VLAN": [
+  "VLAN 10 for staff, VLAN 20 for guests, one physical switch",
+  "VLAN 1 — the default everyone is told not to use",
+  "a 12-bit VLAN ID — hence the famous 4094 ceiling"
+ ],
+ "VNC": [
+  "port 5900 — display :0's front door",
+  "RealVNC, TightVNC, UltraVNC — one RFB protocol, many forks",
+  "macOS Screen Sharing — VNC under the Apple paint"
+ ],
+ "VPLS": [
+  "a bank stitching 40 branch LANs into one broadcast domain",
+  "RFC 4761 vs 4762 — BGP or LDP signalling, pick your camp",
+  "the carrier's MPLS core quietly learning your MAC addresses"
+ ],
+ "VPN": [
+  "the corporate client you launch before reading email from home",
+  "an expat watching home-country streaming through one",
+  "WireGuard, OpenVPN, IPsec — three answers to the same question"
+ ],
+ "VRF": [
+  "`ip vrf CUSTOMER-A` — same router, parallel universe",
+  "two customers both using 10.0.0.0/8 and never colliding",
+  "a management VRF keeping SSH off the customer tables"
+ ],
+ "VRRP": [
+  "virtual MAC 00:00:5e:00:01:0a — the last byte is the group ID",
+  "RFC 5798 — HSRP's idea, minus the Cisco lock-in",
+  "priority 255 — the address owner always wins the election"
+ ],
+ "VTI": [
+  "`interface Tunnel0` with `tunnel mode ipsec ipv4`",
+  "running OSPF straight over the tunnel — no crypto-map gymnastics",
+  "one interface per peer, routable like any other"
+ ],
+ "VTP": [
+  "one stale switch with a higher revision number — every VLAN gone",
+  "`vtp mode transparent` — how the cautious opt out",
+  "Cisco-only, multicast to 01:00:0c:cc:cc:cc"
+ ],
+ "VXLAN": [
+  "a 24-bit VNI — 16 million segments instead of 4094",
+  "UDP port 4789 — Ethernet frames riding inside UDP",
+  "stretching layer 2 between data centers without crying (much)"
+ ],
+ "WebDAV": [
+  "PROPFIND — a directory listing, HTTP-style",
+  "Windows 'Map Network Drive' pointed at an https:// URL",
+  "Nextcloud and SharePoint both speak it underneath"
+ ],
+ "WebRTC": [
+  "a Google Meet call — no plugin, just the browser",
+  "getUserMedia() — the permission prompt for your webcam",
+  "DTLS-SRTP — the media encrypts itself, by mandate"
+ ],
+ "WebSocket": [
+  "ws:// and wss:// — the URL scheme that isn't http",
+  "HTTP 101 Switching Protocols — the upgrade that starts it all",
+  "every live stock ticker and chat box you've left open in a tab"
+ ],
+ "WEP": [
+  "cracked in minutes with aircrack-ng and enough captured IVs",
+  "the TJX breach — some 45 million cards, lifted via store Wi-Fi on WEP",
+  "RC4 with a 24-bit IV — the flaw came factory-installed"
+ ],
+ "WHOIS": [
+  "whois example.com — IANA's reserved name, on public display",
+  "port 43 — a lookup protocol older than DNS itself",
+  "RDAP — its JSON-speaking successor"
+ ],
+ "WINS": [
+  "a Windows NT server resolving FILESERVER to 192.0.2.10",
+  "NetBIOS name service on port 137, centralised instead of shouted",
+  "the WINS tab still lurking in Windows adapter settings today"
+ ],
+ "WireGuard": [
+  "about 4,000 lines of kernel code — auditable in an afternoon",
+  "merged into Linux 5.6 in 2020",
+  "wg-quick up wg0 — connected before you finish blinking"
+ ],
+ "WPA": [
+  "TKIP — rotating keys fast enough to outrun WEP's flaw",
+  "ratified in 2003 as a stopgap while 802.11i finished baking",
+  "designed to run on old WEP hardware with just a firmware update"
+ ],
+ "WPA2": [
+  "AES-CCMP — finally, real encryption over the air",
+  "KRACK, 2017 — the nonce-reuse scare that patched the planet",
+  "802.11i, 2004 — what your home router has run for two decades"
+ ],
+ "WPA3": [
+  "SAE — the Dragonfly handshake replacing the old PSK exchange",
+  "every wrong-password guess now needs a fresh live exchange",
+  "mandatory for Wi-Fi 6 certification since mid-2020"
+ ],
+ "X.25": [
+  "the SWIFT banking network ran on it for decades",
+  "Minitel — France's pre-web online life, over X.25",
+  "9600 baud with hop-by-hop error checking at every switch"
+ ],
+ "X.509": [
+  "the certificate behind every https:// padlock",
+  "Subject: CN=example.com, Issuer: a CA you've never met",
+  "openssl x509 -in cert.pem -text — go read one yourself"
+ ],
+ "X11": [
+  "ssh -X — the app runs there, the window appears here",
+  "DISPLAY=:0 — the env var that decides where windows go",
+  "TCP port 6000 — display :0, on the network"
+ ],
+ "XDR": [
+  "big-endian and 4-byte aligned — RFC 4506's whole personality",
+  "every NFS mount serializes its calls through it",
+  "the wire format under ONC RPC since the SunOS days"
+ ],
+ "XML": [
+  "<soap:Envelope> — enterprise middleware's native tongue",
+  "every Maven pom.xml and Android layout file",
+  "RSS feeds — the XML you might actually still consume"
+ ],
+ "XMPP": [
+  "Google Talk in 2005 — chat you could actually federate with",
+  "user@jabber.org — JIDs dressed up like email addresses",
+  "port 5222 — client to server, STARTTLS expected"
+ ],
+ "XNS": [
+  "Xerox PARC, late 1970s — networking's other gift from Xerox",
+  "Novell IPX and Banyan VINES both borrowed its blueprints",
+  "IDP packets — a 32-bit network plus a 48-bit host address"
+ ],
+ "Y.1731": [
+  "ETH-DM frames timestamping delay across a carrier Ethernet circuit",
+  "proving the metro link really meets its 10 ms SLA",
+  "ITU's extension of 802.1ag CFM — same MEPs, new tricks"
+ ],
+ "Zigbee": [
+  "Philips Hue bulbs meshing through each other to reach the bridge",
+  "IKEA TRÅDFRI — flat-pack home automation, Zigbee inside",
+  "802.15.4 at 2.4 GHz, sipping a coin cell for years"
+ ]
+}
