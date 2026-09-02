@@ -693,6 +693,10 @@ function tipHTML(name) {
     ${meta.discovery ? `<div class="tip-desc">${esc(meta.discovery)}</div>` : ''}
     <div class="tip-from">${from}</div>`;
 }
+// Every render site that interpolates a dynamic string (element name,
+// discovery text, spec, standard, examples, ...) into innerHTML MUST pass
+// it through esc() first — see the overlay/Lab Notes/Archive/tooltip
+// templates above for the pattern. Regression guard: scripts/test-esc.js.
 function esc(s) {
   return String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 }
