@@ -72,6 +72,27 @@ const produced = new Set(recipes.map((r) => r.result));
 const orphans = nodes.filter((n) => !STARTING.includes(n) && !produced.has(n));
 note('Every non-starting node is the result of a recipe', orphans.length === 0, orphans);
 
+// --- Check 4: discovery text is free of authoring artifacts / stubs -------
+// A map-section reference (e.g. "§12") leaking into player-facing text, or a
+// discovery line that IS one of the known placeholder stubs verbatim (not
+// merely containing the phrase — "cross-branch: ..." as a real explanatory
+// note is fine; the bare stub "cross-branch" is not).
+const MAP_ARTIFACT = /§\s*\d/;
+const PLACEHOLDER_STUBS = new Set([
+  'working on it',
+  'answered',
+  'their phone is ringing',
+  'cross-branch',
+]);
+const contentIssues = [];
+for (const n of nodes) {
+  const d = data.elements[n] && data.elements[n].discovery;
+  if (!d) continue;
+  if (MAP_ARTIFACT.test(d)) contentIssues.push(`${n}  =>  "${d}"  (map-section artifact)`);
+  else if (PLACEHOLDER_STUBS.has(d.trim().toLowerCase())) contentIssues.push(`${n}  =>  "${d}"  (placeholder stub)`);
+}
+note('No discovery text contains map artifacts or placeholder stubs', contentIssues.length === 0, contentIssues);
+
 // --- Summary --------------------------------------------------------------
 console.log('');
 console.log(`Nodes: ${nodes.length}   Recipes: ${recipes.length}   Starting: ${STARTING.length}`);
