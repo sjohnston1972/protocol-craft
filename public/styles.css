@@ -495,17 +495,28 @@ button{font:inherit;color:inherit}
 
 /* ---------- mobile ---------- */
 @media (max-width:720px){
-  :root{--shelf-w:38vw;--topbar-h:50px}
+  :root{--topbar-h:50px}
   .brand-name{display:none}
-  .layout{flex-direction:row}
-  .shelf{width:40vw;flex-basis:40vw}
   .hint-sub{font-size:12.5px}
   .chip{padding:8px 11px}
   .chip .name{font-size:12.5px}
   .counter-num{font-size:18px}
 }
-@media (max-width:480px){
-  .shelf{width:44vw;flex-basis:44vw}
+
+/* Board-first layout: below 560px the shelf becomes a reachable bottom
+   sheet (order:2, capped height) instead of a side column, so the board
+   — where dragging/combining actually happens — gets the majority of
+   the viewport. overShelf() in app.js reads the shelf's live rect, so
+   the drop-to-delete hit test follows this automatically. */
+@media (max-width:560px){
+  .layout{flex-direction:column}
+  .board{order:1;min-height:0}
+  .shelf{
+    order:2;width:100%;flex:0 0 auto;height:clamp(160px,32vh,260px);
+    border-right:none;border-top:1px solid var(--line);
+  }
+  .shelf-head{padding:8px 10px 6px}
+  .shelf-list{padding:8px}
 }
 @media (prefers-reduced-motion:reduce){
   *{animation-duration:.001ms!important;transition-duration:.01ms!important}
