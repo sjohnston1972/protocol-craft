@@ -487,7 +487,7 @@ function renderElementOverlay(name, opts) {
           ${meta.milestone ? '<span class="dc-msbadge">milestone</span>' : ''}
         </div>
         ${meta.spec ? `<div class="dc-spec mono">${esc(meta.spec)}</div>` : ''}
-        <div class="dc-desc">${meta.discovery || ''}</div>
+        <div class="dc-desc">${esc(meta.discovery || '')}</div>
         ${Array.isArray(meta.examples) && meta.examples.length ? `
         <div class="dc-examples">
           <div class="dc-ex-label">for instance</div>
@@ -588,11 +588,11 @@ function renderLabNotes() {
     item.innerHTML = `
       <div class="ln-row">
         <span class="ln-dot"></span>
-        <span class="ln-name">${name}</span>
-        ${meta.standard ? `<span class="ln-std mono">${meta.standard}</span>` : ''}
+        <span class="ln-name">${esc(name)}</span>
+        ${meta.standard ? `<span class="ln-std mono">${esc(meta.standard)}</span>` : ''}
       </div>
-      ${meta.discovery ? `<div class="ln-desc">${meta.discovery}</div>` : ''}
-      ${meta.spec ? `<div class="ln-spec mono">${meta.spec}</div>` : ''}`;
+      ${meta.discovery ? `<div class="ln-desc">${esc(meta.discovery)}</div>` : ''}
+      ${meta.spec ? `<div class="ln-spec mono">${esc(meta.spec)}</div>` : ''}`;
     els.labnotesBody.appendChild(item);
   }
 }
@@ -645,11 +645,11 @@ function renderArchive() {
     item.innerHTML = `
       <div class="ln-row">
         <span class="ln-dot"></span>
-        <span class="ln-name">${name}</span>
-        ${meta.standard ? `<span class="ln-std mono">${meta.standard}</span>` : ''}
+        <span class="ln-name">${esc(name)}</span>
+        ${meta.standard ? `<span class="ln-std mono">${esc(meta.standard)}</span>` : ''}
       </div>
-      ${meta.discovery ? `<div class="ln-desc">${meta.discovery}</div>` : ''}
-      ${meta.spec ? `<div class="ln-spec mono">${meta.spec}</div>` : ''}`;
+      ${meta.discovery ? `<div class="ln-desc">${esc(meta.discovery)}</div>` : ''}
+      ${meta.spec ? `<div class="ln-spec mono">${esc(meta.spec)}</div>` : ''}`;
     els.archiveBody.appendChild(item);
   }
 }
