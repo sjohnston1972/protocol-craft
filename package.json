@@ -10,8 +10,8 @@
     "build": "node scripts/parse.js && node scripts/validate.js",
     "parse": "node scripts/parse.js",
     "validate": "node scripts/validate.js",
-    "dev": "wrangler dev",
-    "serve": "wrangler dev",
+    "dev": "npx wrangler dev",
+    "serve": "npx wrangler dev",
     "deploy": "node scripts/deploy.js"
   },
   "devDependencies": {
