@@ -171,3 +171,8 @@ if (!haveAuthored) {
   for (const n of missing) console.log('  - ' + n);
 }
 console.log(`\nWrote ${path.relative(ROOT, OUT)}`);
+
+if (missing.length) {
+  console.error(`\n✗ ${missing.length} node(s) are missing a discovery description — the build cannot ship half-finished content.`);
+  process.exit(1);
+}
