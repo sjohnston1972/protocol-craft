@@ -102,8 +102,18 @@ published; there's no separate build step.
 
 ## Commands
 
-Run these in a terminal from the project folder (they need
-[Node.js](https://nodejs.org) installed):
+Run these in a terminal from the project folder. You'll need
+[Node.js](https://nodejs.org) **20 or newer** installed (developed and tested
+on Node 24).
+
+### Setup
+
+Once per clone, install the project's dependencies (this pulls in `wrangler`,
+used to preview and deploy the game):
+
+```
+npm install
+```
 
 | Command | What it does |
 |---|---|
@@ -114,11 +124,12 @@ Run these in a terminal from the project folder (they need
 
 ### Changing the game's content
 
-1. Edit `protocol_tree.md` (to change recipes) or `data/elements.json` (to
+1. Run `npm install` if you haven't already (first time only).
+2. Edit `protocol_tree.md` (to change recipes) or `data/elements.json` (to
    change descriptions).
-2. Run `npm run build`. If it complains, it'll tell you exactly what's wrong.
-3. Run `npm run serve` to try it.
-4. Run `npm run deploy` when you're happy.
+3. Run `npm run build`. If it complains, it'll tell you exactly what's wrong.
+4. Run `npm run serve` to try it.
+5. Run `npm run deploy` when you're happy.
 
 ---
 
