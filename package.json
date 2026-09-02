@@ -2,17 +2,18 @@
   "name": "protocol-craft",
   "version": "1.0.0",
   "private": true,
-  "description": "Infinite Craft, but for networking protocols — Layer 1 through Layer 7.",
+  "description": "Infinite Craft, but for networking protocols \u00e2\u20ac\u201d Layer 1 through Layer 7.",
   "engines": {
     "node": ">=20"
   },
   "scripts": {
-    "build": "node scripts/parse.js && node scripts/validate.js",
+    "build": "node scripts/parse.js && node scripts/validate.js && node scripts/test-esc.js",
     "parse": "node scripts/parse.js",
     "validate": "node scripts/validate.js",
     "dev": "npx wrangler dev",
     "serve": "npx wrangler dev",
-    "deploy": "node scripts/deploy.js"
+    "deploy": "node scripts/deploy.js",
+    "test:esc": "node scripts/test-esc.js"
   },
   "devDependencies": {
     "wrangler": "^4.128.0"
