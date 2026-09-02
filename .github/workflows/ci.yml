@@ -1,0 +1,33 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  build:
+    name: Parse + validate
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run build (parse + validate)
+        run: npm run build
+
+      - name: Confirm public/data/recipes.json is committed and in sync
+        run: |
+          git diff --ignore-space-at-eol --exit-code -- public/data/recipes.json || {
+            echo "::error::public/data/recipes.json is out of date. Run 'npm run build' locally and commit the result.";
+            exit 1;
+          }
