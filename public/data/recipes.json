@@ -15,7 +15,7 @@
       "tier": "L5",
       "standard": null,
       "spec": null,
-      "discovery": "working on it",
+      "discovery": "provisional response — request received, no final answer yet",
       "examples": [
         "SIP/2.0 100 Trying — proxy got your INVITE, hang on",
         "the provisional reply before the phone even rings"
@@ -26,7 +26,7 @@
       "tier": "L5",
       "standard": null,
       "spec": null,
-      "discovery": "their phone is ringing",
+      "discovery": "provisional response — the callee's phone is alerting them",
       "examples": [
         "SIP/2.0 180 Ringing — callee's phone is lit up",
         "the ringback tone you hear before someone picks up"
@@ -37,7 +37,7 @@
       "tier": "L5",
       "standard": null,
       "spec": null,
-      "discovery": "answered",
+      "discovery": "final success response — the call is accepted, media can start",
       "examples": [
         "SIP/2.0 200 OK — call answered, media can flow",
         "HTTP/1.1 200 OK — the reply every web request hopes for"
@@ -70,7 +70,7 @@
       "tier": "L2",
       "standard": null,
       "spec": null,
-      "discovery": "cross-branch",
+      "discovery": "compresses IPv6 to fit over low-power 802.15.4 radio links",
       "examples": [
         "IPv6 squeezed over 802.15.4 in a Thread smart-home mesh",
         "header compression so a sensor can speak IP on a tiny radio"
@@ -700,7 +700,7 @@
       "tier": "L5",
       "standard": null,
       "spec": null,
-      "discovery": "hang up",
+      "discovery": "tears down an established call",
       "examples": [
         "SIP BYE sip:alice@example.com — the call is over",
         "what your desk phone sends when you slam the handset down",
@@ -736,7 +736,7 @@
       "tier": "L5",
       "standard": null,
       "spec": null,
-      "discovery": "never mind, stop ringing",
+      "discovery": "aborts an INVITE before it's been answered",
       "examples": [
         "SIP CANCEL — the caller gave up before you answered",
         "kills a ringing INVITE that never got its 200 OK",
@@ -748,7 +748,7 @@
       "tier": "L2",
       "standard": null,
       "spec": null,
-      "discovery": "Tunnel forged in §12",
+      "discovery": "tunnels a thin AP's control and data traffic to a central wireless controller",
       "examples": [
         "thin APs tunnelling Wi-Fi frames home to a Cisco WLC",
         "UDP 5246 for control, 5247 for data",
@@ -1708,7 +1708,7 @@
       "tier": "L2",
       "standard": null,
       "spec": null,
-      "discovery": "Redundancy is forged in §13",
+      "discovery": "a pair of interfaces set as an active/standby backup — L2 redundancy without running STP",
       "examples": [
         "switchport backup interface Gi0/2 — one up, one waiting",
         "access-switch uplink failover without running spanning tree",
@@ -2164,7 +2164,7 @@
       "tier": "L2",
       "standard": null,
       "spec": null,
-      "discovery": "cross-branch, needs §15",
+      "discovery": "a switch listens in on IGMP so it only forwards multicast out ports that asked for it",
       "examples": [
         "a switch forwarding IPTV only to the ports that asked for it",
         "without it, every multicast frame floods all 48 ports",
@@ -5536,7 +5536,7 @@
       "tier": "L2",
       "standard": null,
       "spec": null,
-      "discovery": "cross-branch, needs §12",
+      "discovery": "an early packet-switched WAN protocol that error-checks every hop between switches",
       "examples": [
         "the SWIFT banking network ran on it for decades",
         "Minitel — France's pre-web online life, over X.25",

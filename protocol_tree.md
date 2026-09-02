@@ -97,7 +97,7 @@ Ring + Cisco             → REP
 Switch + IS-IS           → TRILL              (cross-branch: you need link-state routing to escape spanning tree)
 IS-IS + VLAN             → SPB (802.1aq)
 TRILL + Cisco            → FabricPath
-Redundancy + Switch      → Flex Links         (Redundancy is forged in §13)
+Redundancy + Switch      → Flex Links         (a pair of interfaces set as an active/standby backup — L2 redundancy without running STP)
 ```
 
 ## 5. L2 — Discovery, auth, control
@@ -121,7 +121,7 @@ Discovery + Clock        → Monitoring
 Monitoring + Ethernet    → Link OAM (802.3ah)
 Link OAM + Carrier       → CFM (802.1ag)
 CFM + Rule               → Y.1731
-IGMP + Switch            → IGMP Snooping      (cross-branch, needs §15)
+IGMP + Switch            → IGMP Snooping      (a switch listens in on IGMP so it only forwards multicast out ports that asked for it)
 Frame + Policy           → CoS (802.1p)       (three priority bits in the tag; the original QoS)
 ```
 
@@ -136,7 +136,7 @@ Serial Line + Frame      → HDLC
 HDLC + Cisco             → Cisco HDLC
 HDLC + Legacy            → SDLC
 HDLC + Rule              → LAPB
-LAPB + Packet            → X.25               (cross-branch, needs §12)
+LAPB + Packet            → X.25               (an early packet-switched WAN protocol that error-checks every hop between switches)
 X.25 + Clock             → Frame Relay        (X.25 with the training wheels removed)
 Frame Relay + Discovery  → LMI
 Frame Relay + Fibre      → ATM
@@ -167,13 +167,13 @@ WPA2 + Clock             → WPA3
 802.11 + Mobility        → 802.11r
 802.11 + Mesh            → 802.11s
 802.11s + Route          → HWMP               (an L2 routing protocol — discuss)
-802.11 + Tunnel          → CAPWAP             (Tunnel forged in §12)
+802.11 + Tunnel          → CAPWAP             (tunnels a thin AP's control and data traffic to a central wireless controller)
 CAPWAP + Cisco           → LWAPP
 Radio + Clock            → Frequency Hopping
 Frequency Hopping + Frame→ Bluetooth
 Bluetooth + Rule         → 802.15.4
 802.15.4 + Mesh          → Zigbee
-802.15.4 + IPv6          → 6LoWPAN            (cross-branch)
+802.15.4 + IPv6          → 6LoWPAN            (compresses IPv6 to fit over low-power 802.15.4 radio links)
 Radio + Carrier          → LoRaWAN
 ```
 
@@ -523,12 +523,12 @@ SIP Proxy + Rule         → B2BUA                (sits in the middle of both ca
 SIP Proxy + Policy       → SBC                  (the border guard between VoIP networks)
 SIP + Authentication     → REGISTER             (here's where to reach me)
 SIP + Request            → INVITE               (let's start a session)
-INVITE + Clock           → 100 Trying           (working on it)
-INVITE + Signal          → 180 Ringing          (their phone is ringing)
-INVITE + Response        → 200 OK               (answered)
+INVITE + Clock           → 100 Trying           (provisional response — request received, no final answer yet)
+INVITE + Signal          → 180 Ringing          (provisional response — the callee's phone is alerting them)
+INVITE + Response        → 200 OK               (final success response — the call is accepted, media can start)
 200 OK + Rule            → SIP ACK              (confirmed — media starts)
-INVITE + Number          → CANCEL               (never mind, stop ringing)
-Connection + Telephone   → BYE                  (hang up)
+INVITE + Number          → CANCEL               (aborts an INVITE before it's been answered)
+Connection + Telephone   → BYE                  (tears down an established call)
 SIP + Encoding           → SDP                  (describes codecs/ports inside INVITE & 200 OK)
 SDP + Stream             → RTP                  (the real-time audio/video packets)
 RTP + Monitoring         → RTCP                 (quality stats for the stream)
