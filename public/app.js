@@ -287,8 +287,11 @@ function attachDrag(inst) {
 }
 
 function overShelf(e) {
+  // Test against the shelf's actual live rect on all four sides, rather
+  // than assuming it's a left column — this holds whether the shelf is
+  // the desktop side column or the mobile bottom sheet.
   const r = els.shelf.getBoundingClientRect();
-  return e.clientX <= r.right && e.clientY >= r.top;
+  return e.clientX >= r.left && e.clientX <= r.right && e.clientY >= r.top && e.clientY <= r.bottom;
 }
 
 function bringToFront(inst) {
