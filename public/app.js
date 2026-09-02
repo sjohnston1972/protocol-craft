@@ -463,12 +463,6 @@ function toast(html, cls, ms) {
 let pendingArchiveInst = null;
 let overlayShownAt = 0; // the tap that opens the overlay also fires a click; ignore it
 
-function totalDiscoverable() {
-  let n = 0;
-  for (const name in DB.elements) if (!DB.starting.includes(name)) n++;
-  return n;
-}
-
 function renderElementOverlay(name, opts) {
   const meta = DB.elements[name] || {};
   const tier = tierOf(name);
@@ -496,7 +490,7 @@ function renderElementOverlay(name, opts) {
         ${opts.deadNotice || ''}
         <div class="dc-divider"></div>
         <div class="dc-recipes">${opts.recipesHTML || ''}</div>
-        <div class="dc-progress">discovery ${discoveryCount()} of ${totalDiscoverable()}</div>
+        <div class="dc-progress">discovery ${discoveryCount()}</div>
       </div>
       <div class="dc-continue">click anywhere to continue</div>
     </div>`;
